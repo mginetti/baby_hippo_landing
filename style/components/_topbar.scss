@@ -1,0 +1,36 @@
+.topbar {
+	height: 75px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	&--logo {
+		img {
+			height: 75px;
+		}
+	}
+	&--menu {
+		flex-basis: 100%;
+		flex: 1;
+		ul {
+			width: auto;
+			height: 25px;
+			list-style-type: none;
+			li {
+				float: right;
+				padding: 14px 17px;
+				a {
+					color: black;
+					font-weight: bold;
+					text-decoration: none;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 50em) {
+	.topbar {
+		display: none;
+	}
+}
