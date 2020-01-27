@@ -1,0 +1,106 @@
+.footer {
+    height: 100vh;
+
+    &--titolo{
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+
+        .barre{
+            display: flex;
+            flex-direction: column;
+
+            .barra{
+                background-color: blue;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    &--contatti {
+        flex-basis: 100%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .mappa {
+            flex-basis: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: right;
+
+            .card {
+                border-radius: 20px;
+                height: 90%;
+            }
+        }
+
+        @media only screen and (min-width: 40em) {
+            .mappa {
+                flex: 1 50%;
+            }
+        }
+
+        .form {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .radius{
+                border-radius: 20px;
+                margin-bottom: 10px;
+            }
+
+            .layout {
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+
+            #richiesta {
+                height: 75px;
+                margin-left: 25px;
+                margin-right: 25px;
+                margin-bottom: 10px;
+            }
+
+            .privacy{
+                display: flex;
+                flex-direction: row;
+
+                .checkbox{
+                    margin-left: 25px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+
+                .text{
+                    margin-left: 15px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 40em) {
+            .form {
+                flex: 1 50%;
+            }
+        }
+    }
+
+    &--sostenibiità {
+        flex-basis: 100%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &--logo {
+        flex-basis: 100%;
+        height: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
