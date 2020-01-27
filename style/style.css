@@ -27,8 +27,8 @@ body {
 
 .jumbotrom {
   padding: 15px;
+  padding-bottom: 0;
   height: 100%;
-  background-color: #F29100;
 }
 
 .jumbotrom--img {
@@ -66,17 +66,22 @@ body {
 
 .waves {
   height: 10vh;
+  padding: 15px;
+  padding-top: 0;
+  position: relative;
+  z-index: -1;
 }
 
 .waves img {
   height: 100%;
   width: 100%;
   position: relative;
+  top: -5px;
 }
 
 @media only screen and (min-width: 40em) {
   .waves {
-    height: 15vh;
+    height: 30vh;
   }
 }
 

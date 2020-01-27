@@ -1,11 +1,16 @@
 .waves {
     height: 10vh;
+    padding: $padding;
+    padding-top: 0;
+    position: relative;
+    z-index: -1;
     img {
         height: 100%;
         width: 100%;
         position: relative;
+        top: -5px
     }
     @media only screen and (min-width: 40em) {
-        height: 15vh;
+        height: 30vh;
     }
 }
