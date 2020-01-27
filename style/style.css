@@ -221,32 +221,6 @@ body {
   height: 100vh;
 }
 
-.footer--titolo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 70px;
-}
-
-.footer--titolo .barre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer--titolo .barre .barra {
-  background-color: blue;
-  border-radius: 20px;
-}
-
 .footer--contatti {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -258,24 +232,60 @@ body {
       flex-wrap: wrap;
 }
 
+.footer--contatti .titolo {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.footer--contatti .titolo .testo_sezione {
+  width: 50%;
+}
+
+.footer--contatti .titolo .barre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+
+.footer--contatti .titolo .barre .barra {
+  background-color: #F29100;
+  border-radius: 20px;
+}
+
 .footer--contatti .mappa {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: right;
 }
 
 .footer--contatti .mappa .card {
   border-radius: 20px;
-  height: 90%;
+  height: 80%;
 }
 
 @media only screen and (min-width: 40em) {
@@ -283,6 +293,9 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
             flex: 1 50%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -301,9 +314,14 @@ body {
           justify-content: center;
 }
 
+.footer--contatti .form input {
+  background-color: #A3DBEF;
+}
+
 .footer--contatti .form .radius {
   border-radius: 20px;
   margin-bottom: 10px;
+  height: 25px;
 }
 
 .footer--contatti .form .layout {
@@ -337,7 +355,7 @@ body {
 .footer--contatti .form .privacy .text {
   margin-left: 15px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 40em) {
