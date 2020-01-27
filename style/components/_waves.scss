@@ -1,0 +1,11 @@
+.waves {
+    height: 10vh;
+    img {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    @media only screen and (min-width: 40em) {
+        height: 15vh;
+    }
+}

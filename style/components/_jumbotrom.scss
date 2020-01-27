@@ -1,0 +1,33 @@
+.jumbotrom {
+	padding: $padding;
+	height: 100%;
+	background-color: $primary;
+	&--img {
+		border-radius: 10px;
+		height: 100%;
+		background-image: url("../assets/img/Back.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.hippo {
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			height: 100%;
+			img {
+				position: absolute;
+				bottom: 0px;
+				left: 50%;
+				transform: translateX(-49%);
+				height: 40%;
+			}
+			@media only screen and (min-width: 40em) {
+				img {
+					height: 75%;
+				}
+			}
+		}
+	}
+}

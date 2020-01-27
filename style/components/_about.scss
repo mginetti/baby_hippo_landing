@@ -1,0 +1,32 @@
+.about {
+    width: 100%;
+    &--title {
+        display: flex;
+        justify-content: center;
+        flex: 1 100%;
+    }
+    &--img {
+        flex: 1 100%;
+        padding: $padding;
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+    &--text {
+        flex: 1 100%;
+        padding: $padding;
+        margin-top: $margin;
+    }
+
+    @media only screen and (min-width: 40em) {
+        &--img {
+            flex: 1 50%;
+            
+        }
+        &--text {
+            flex: 1 50%;
+        }
+    }
+
+}
