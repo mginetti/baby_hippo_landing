@@ -288,6 +288,20 @@ body {
 @media only screen and (min-width: 40em) {
   .mascottes--mascottes .mascotte {
     -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
+  }
+  .mascottes--mascottes .mascotte--back {
+    top: 245px;
+  }
+  .mascottes--mascottes .mascotte--img {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .mascottes--mascottes .mascotte {
+    -webkit-box-flex: 1;
         -ms-flex: 1 25%;
             flex: 1 25%;
   }

@@ -42,6 +42,18 @@
         }
         @media only screen and (min-width: 40em) {
             .mascotte {
+                flex: 1 50%;
+                &--back {
+                    top: 245px;
+                }
+
+                &--img {
+                    height: 350px;
+                }
+            }
+        }
+        @media only screen and (min-width: 75em) {
+            .mascotte {
                 flex: 1 25%;
                 &--back {
                     top: 245px;
