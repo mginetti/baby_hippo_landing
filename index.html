@@ -32,12 +32,11 @@
 				</div>
 				<div class="topbar--menu">
 					<ul>
-						<li><a href="#">Sostenibilità</a></li>
-						<li><a href="#">Contatti</a></li>
-						<li><a href="#">Le Mascotte</a></li>
+						<li><a  onclick="myContatti()">Contatti</a></li>
+						<li><a  onclick="myMascotte()">Le Mascotte</a></li>
 						<li><a href="#">App</a></li>
-						<li><a href="#">Gli argomenti</a></li>
-						<li><a href="#">Intro</a></li>
+						<li><a  onclick="myArgomenti()">Gli argomenti</a></li>
+						<li><a  onclick="myIntro()">Intro</a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,7 +49,7 @@
 		<div class="waves">
 			<img src="assets/img/w.png" alt="" />
 		</div>
-		<div class="container about">
+		<div id="about" class="container about">
 			<div class="about--title">
 				<h1>CHI SIAMO</h1>
 			</div>
@@ -81,7 +80,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="container arguments">
+		<div id="argomenti" class="container arguments">
 			<div class="arguments--title">
 				<h1>ARGOMENTI</h1>
 			</div>
@@ -129,7 +128,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container mascottes">
+		<div id="mascotte" class="container mascottes">
 			<div class="mascottes--title">
 				<h1>ARGOMENTI</h1>
 			</div>
@@ -177,7 +176,7 @@
 			</div>
 		</div>
 
-		<footer class="container footer">
+		<footer id="footer" class="container footer">
 			<div class="footer--contatti">
 				<div class="titolo">
 					<div class="flex1 barre">
