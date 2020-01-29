@@ -1,5 +1,6 @@
 .arguments {
 	background-color: white;
+	position: relative;
 	&--title {
 		flex: 1 100%;
 		display: flex;
@@ -17,21 +18,15 @@
             margin-top: $margin;
             flex-basis: 100%;
             position: relative;
-			&--back {
-				background-color: $primary;
-				position: absolute;
-				height: 120px;
-				right: $padding;
-				left: $padding;
-				top: 145px;
-				border-radius: 10px;
-			}
 			&--img {
 				position: relative;
                 text-align: center;
 				height: 250px;
 				z-index: 1;
 				img {
+					background-color: $primary;
+					border: 15px $primary solid;
+					border-radius: 10px;
                     height: 100%;
 				}
 			}
@@ -43,9 +38,6 @@
         @media only screen and (min-width: 40em) {
             .argument {
                 flex: 1 33%;
-                &--back {
-                    top: 245px;
-                }
 
                 &--img {
                     height: 350px;

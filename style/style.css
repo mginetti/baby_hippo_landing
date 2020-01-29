@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -137,6 +139,7 @@ body {
 
 .arguments {
   background-color: white;
+  position: relative;
 }
 
 .arguments--title {
@@ -177,16 +180,6 @@ body {
   position: relative;
 }
 
-.arguments--arguments .argument--back {
-  background-color: #F29100;
-  position: absolute;
-  height: 120px;
-  right: 15px;
-  left: 15px;
-  top: 145px;
-  border-radius: 10px;
-}
-
 .arguments--arguments .argument--img {
   position: relative;
   text-align: center;
@@ -195,6 +188,9 @@ body {
 }
 
 .arguments--arguments .argument--img img {
+  background-color: #F29100;
+  border: 15px #F29100 solid;
+  border-radius: 10px;
   height: 100%;
 }
 
@@ -208,9 +204,6 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 33%;
             flex: 1 33%;
-  }
-  .arguments--arguments .argument--back {
-    top: 245px;
   }
   .arguments--arguments .argument--img {
     height: 350px;
@@ -250,6 +243,7 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .mascottes--mascottes .mascotte {
@@ -257,16 +251,6 @@ body {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   position: relative;
-}
-
-.mascottes--mascottes .mascotte--back {
-  background-color: #F29100;
-  position: absolute;
-  height: 120px;
-  right: 15px;
-  left: 15px;
-  top: 145px;
-  border-radius: 10px;
 }
 
 .mascottes--mascottes .mascotte--img {
@@ -278,11 +262,23 @@ body {
 
 .mascottes--mascottes .mascotte--img img {
   height: 100%;
+  border-radius: 10px;
+  border: #F29100 15px solid;
+  background-color: #F29100;
 }
 
 .mascottes--mascottes .mascotte--desc {
   margin-top: 15px;
   padding: 15px;
+  text-align: center;
+}
+
+.mascottes--mascottes .mascotte--desc .btn {
+  border: none;
+  background-color: #F29100;
+  border-radius: 10px;
+  padding: 12px 35px;
+  color: white;
 }
 
 @media only screen and (min-width: 40em) {
@@ -290,9 +286,6 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
             flex: 1 50%;
-  }
-  .mascottes--mascottes .mascotte--back {
-    top: 245px;
   }
   .mascottes--mascottes .mascotte--img {
     height: 350px;
@@ -302,11 +295,8 @@ body {
 @media only screen and (min-width: 75em) {
   .mascottes--mascottes .mascotte {
     -webkit-box-flex: 1;
-        -ms-flex: 1 25%;
-            flex: 1 25%;
-  }
-  .mascottes--mascottes .mascotte--back {
-    top: 245px;
+        -ms-flex: 1 calc(25% - 30px);
+            flex: 1 calc(25% - 30px);
   }
   .mascottes--mascottes .mascotte--img {
     height: 350px;
@@ -448,6 +438,9 @@ body {
 }
 
 .topbar--menu {
+  background-color: #F29100;
+  border-radius: 15px;
+  margin-left: 15px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -webkit-box-flex: 1;
@@ -463,7 +456,7 @@ body {
 
 .topbar--menu ul li {
   float: right;
-  padding: 14px 17px;
+  padding: 9px 17px;
 }
 
 .topbar--menu ul li a {
