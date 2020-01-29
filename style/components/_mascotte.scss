@@ -1,0 +1,56 @@
+.mascottes {
+	background-color: white;
+	&--title {
+		flex: 1 100%;
+		display: flex;
+		justify-content: center;
+	}
+	&--desc {
+		flex: 1 100%;
+		margin-top: $margin;
+	}
+	&--mascottes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .mascotte {
+            margin-top: $margin;
+            flex-basis: 100%;
+            position: relative;
+			&--back {
+				background-color: $primary;
+				position: absolute;
+				height: 120px;
+				right: $padding;
+				left: $padding;
+				top: 145px;
+				border-radius: 10px;
+			}
+			&--img {
+				position: relative;
+                text-align: center;
+				height: 250px;
+				z-index: 1;
+				img {
+                    height: 100%;
+				}
+			}
+			&--desc {
+                margin-top: $margin;
+				padding: $padding;
+			}
+        }
+        @media only screen and (min-width: 40em) {
+            .mascotte {
+                flex: 1 25%;
+                &--back {
+                    top: 245px;
+                }
+
+                &--img {
+                    height: 350px;
+                }
+            }
+        }
+	}
+}
