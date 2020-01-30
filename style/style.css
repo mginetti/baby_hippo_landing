@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -136,6 +137,7 @@ body {
 
 .arguments {
   background-color: white;
+  position: relative;
 }
 
 .arguments--title {
@@ -176,16 +178,6 @@ body {
   position: relative;
 }
 
-.arguments--arguments .argument--back {
-  background-color: #F29100;
-  position: absolute;
-  height: 120px;
-  right: 15px;
-  left: 15px;
-  top: 145px;
-  border-radius: 10px;
-}
-
 .arguments--arguments .argument--img {
   position: relative;
   text-align: center;
@@ -194,6 +186,9 @@ body {
 }
 
 .arguments--arguments .argument--img img {
+  background-color: #F29100;
+  border: 15px #F29100 solid;
+  border-radius: 10px;
   height: 100%;
 }
 
@@ -208,11 +203,270 @@ body {
         -ms-flex: 1 33%;
             flex: 1 33%;
   }
-  .arguments--arguments .argument--back {
-    top: 245px;
-  }
   .arguments--arguments .argument--img {
     height: 350px;
+  }
+}
+
+.mascottes {
+  background-color: white;
+}
+
+.mascottes--title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mascottes--desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  margin-top: 15px;
+}
+
+.mascottes--mascottes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.mascottes--mascottes .mascotte {
+  margin-top: 15px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  position: relative;
+}
+
+.mascottes--mascottes .mascotte--img {
+  position: relative;
+  text-align: center;
+  height: 250px;
+  z-index: 1;
+}
+
+.mascottes--mascottes .mascotte--img img {
+  height: 100%;
+  border-radius: 10px;
+  border: #F29100 15px solid;
+  background-color: #F29100;
+}
+
+.mascottes--mascottes .mascotte--desc {
+  margin-top: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.mascottes--mascottes .mascotte--desc .btn {
+  border: none;
+  background-color: #F29100;
+  border-radius: 10px;
+  padding: 12px 35px;
+  color: white;
+}
+
+@media only screen and (min-width: 40em) {
+  .mascottes--mascottes .mascotte {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
+  }
+  .mascottes--mascottes .mascotte--img {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .mascottes--mascottes .mascotte {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 calc(25% - 30px);
+            flex: 1 calc(25% - 30px);
+  }
+  .mascottes--mascottes .mascotte--img {
+    height: 350px;
+  }
+}
+
+.navbar {
+  max-height: 75px;
+}
+
+.navbar img {
+  height: 75px;
+}
+
+.navbar label .menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 44px;
+  width: 44px;
+  z-index: 100;
+  border-radius: 50% 50% 50% 50%;
+  background-color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar label .hamburger {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar label .hamburger:after,
+.navbar label .hamburger:before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.navbar label .hamburger:before {
+  top: -10px;
+}
+
+.navbar label .hamburger:after {
+  bottom: -10px;
+}
+
+.navbar label input {
+  display: none;
+}
+
+.navbar label input:checked + .menu {
+  -webkit-box-shadow: 0 0 0 100vw lightblue, 0 0 0 100vh lightblue;
+          box-shadow: 0 0 0 100vw lightblue, 0 0 0 100vh lightblue;
+  border-radius: 0;
+}
+
+.navbar label input:checked + .menu {
+  background-color: lightblue;
+}
+
+.navbar label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.navbar label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+.navbar label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.navbar label input:checked + .menu + ul {
+  opacity: 1;
+}
+
+.navbar label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+
+.navbar label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 50em) {
+  .navbar {
+    display: none;
+  }
+}
+
+.topbar {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar--logo img {
+  height: 75px;
+}
+
+.topbar--menu {
+  background-color: #F29100;
+  border-radius: 15px;
+  margin-left: 15px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.topbar--menu ul {
+  width: auto;
+  height: 25px;
+  list-style-type: none;
+}
+
+.topbar--menu ul li {
+  float: right;
+  padding: 9px 17px;
+}
+
+.topbar--menu ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 50em) {
+  .topbar {
+    display: none;
   }
 }
 

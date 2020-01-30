@@ -9,6 +9,9 @@
 		}
 	}
 	&--menu {
+		background-color: $primary;
+		border-radius: 15px;
+		margin-left: 15px;
 		flex-basis: 100%;
 		flex: 1;
 		ul {
@@ -17,7 +20,7 @@
 			list-style-type: none;
 			li {
 				float: right;
-				padding: 14px 17px;
+				padding: 9px 17px;
 				a {
 					color: black;
 					font-weight: bold;

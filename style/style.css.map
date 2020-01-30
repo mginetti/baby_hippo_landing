@@ -9,6 +9,9 @@
         "components/_waves.scss",
         "components/_about.scss",
         "components/_arguments.scss",
+        "components/_mascotte.scss",
+        "components/_navbar.scss",
+        "components/_topbar.scss",
         "components/_footer.scss"
     ],
     "names": [],

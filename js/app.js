@@ -22,3 +22,20 @@ const isMobile = () => {
 
 
 init()
+
+function myContatti() { 
+	var element = document.getElementById("footer");
+	element.scrollIntoView();
+  }
+function myMascotte() {
+	var element = document.getElementById("mascotte");
+	element.scrollIntoView();
+  }
+function myArgomenti() {
+	var element = document.getElementById("argomenti");
+	element.scrollIntoView();
+  }
+function myIntro() {
+	var element = document.getElementById("about");
+	element.scrollIntoView();
+  }
