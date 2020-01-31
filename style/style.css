@@ -1,5 +1,3 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -523,6 +521,14 @@ body {
 
 .footer {
   height: 100vh;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer--contatti {
@@ -553,7 +559,13 @@ body {
 }
 
 .footer--contatti .titolo .testo_sezione {
-  width: 50%;
+  width: 70%;
+}
+
+@media only screen and (min-width: 40em) {
+  .footer--contatti .titolo .testo_sezione {
+    width: 30%;
+  }
 }
 
 .footer--contatti .titolo .barre {
@@ -570,15 +582,42 @@ body {
 .footer--contatti .titolo .barre .barra {
   background-color: #F29100;
   border-radius: 20px;
+  min-height: 15px;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
-.footer--contatti .mappa {
+@media only screen and (min-width: 40em) {
+  .footer--contatti .titolo .barre .barra {
+    width: 80%;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+.footer--contatti .padding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer--contatti .padding .mappa {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -587,23 +626,22 @@ body {
           justify-content: center;
 }
 
-.footer--contatti .mappa .card {
+.footer--contatti .padding .mappa .card {
   border-radius: 20px;
   height: 80%;
 }
 
 @media only screen and (min-width: 40em) {
-  .footer--contatti .mappa {
+  .footer--contatti .padding .mappa {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
             flex: 1 50%;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    min-width: 300px;
+    min-height: 300px;
   }
 }
 
-.footer--contatti .form {
+.footer--contatti .padding .form {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -613,34 +651,46 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.footer--contatti .form input {
+.footer--contatti .padding .form button {
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer--contatti .padding .form input {
   background-color: #A3DBEF;
 }
 
-.footer--contatti .form .radius {
+.footer--contatti .padding .form .radius {
   border-radius: 20px;
   margin-bottom: 10px;
   height: 25px;
 }
 
-.footer--contatti .form .layout {
+.footer--contatti .padding .form .layout {
   margin-left: 25px;
   margin-right: 25px;
+  margin-top: 15px;
 }
 
-.footer--contatti .form #richiesta {
+.footer--contatti .padding .form #richiesta {
   height: 75px;
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 10px;
 }
 
-.footer--contatti .form .privacy {
+.footer--contatti .padding .form #mail {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer--contatti .padding .form .privacy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,35 +700,32 @@ body {
           flex-direction: row;
 }
 
-.footer--contatti .form .privacy .checkbox {
+.footer--contatti .padding .form .privacy .checkbox {
   margin-left: 25px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.footer--contatti .form .privacy .text {
+.footer--contatti .padding .form .privacy .text {
   margin-left: 15px;
+  margin-right: 20px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 40em) {
-  .footer--contatti .form {
+  .footer--contatti .padding .form {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
             flex: 1 50%;
   }
 }
 
-.footer--sostenibiità {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  height: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media only screen and (min-width: 40em) {
+  .footer--contatti .padding {
+    margin-right: 150px;
+    margin-left: 115px;
+  }
 }
 
 .footer--logo {
@@ -688,6 +735,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

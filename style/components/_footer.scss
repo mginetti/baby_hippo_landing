@@ -1,5 +1,8 @@
 .footer {
     height: 100vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
 
     &--contatti {
         flex-basis: 100%;
@@ -16,7 +19,13 @@
             text-align: center;
 
             .testo_sezione {
-                width: 50%;
+                width: 70%;
+            }
+
+            @media only screen and (min-width: 40em) {
+                .testo_sezione {
+                    width: 30%;
+                }
             }
 
             .barre {
@@ -27,94 +36,150 @@
                 .barra {
                     background-color: #F29100;
                     border-radius: 20px;
+                    min-height: 15px;
+                    margin-top: 10px;
+                    margin-right: 50px;
+                    margin-left: 50px;
+                }
+
+                @media only screen and (min-width: 40em) {
+                    .barra {
+                        width: 80%;
+                        margin-right: 50px;
+                        margin-left: 50px;
+                    }
                 }
             }
         }
 
-        .mappa {
-            flex-basis: 100%;
+        .padding {
             display: flex;
-            margin-bottom: 10px;
-            align-items: center;
-            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            .card {
-                border-radius: 20px;
-                height: 80%;
-            }
-        }
-
-        @media only screen and (min-width: 40em) {
             .mappa {
-                flex: 1 50%;
-                align-items: flex-end;
-            }
-        }
-
-        .form {
-            flex-basis: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            input {
-                background-color: #A3DBEF;
-            }
-
-            .radius {
-                border-radius: 20px;
-                margin-bottom: 10px;
-                height: 25px;
-            }
-
-            .layout {
-                margin-left: 25px;
-                margin-right: 25px;
-            }
-
-            #richiesta {
-                height: 75px;
-                margin-left: 25px;
-                margin-right: 25px;
-                margin-bottom: 10px;
-            }
-
-            .privacy {
+                flex-basis: 100%;
                 display: flex;
                 flex-direction: row;
+                // margin-bottom: 10px;
+                // margin-left: 10px;
+                align-items: center;
+                justify-content: center;
 
-                .checkbox {
-                    margin-left: 25px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
+                .card {
+                    border-radius: 20px;
+                    height: 80%;
+                }
+            }
+
+            @media only screen and (min-width: 40em) {
+                .mappa {
+                    flex: 1 50%;
+                    min-width: 300px;
+                    min-height: 300px;
+                    // align-items: flex-end;
+                }
+            }
+
+            .form {
+                flex-basis: 100%;
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+
+                button {
+                    width: 100px;
+                    height: 20px;
+                    border-radius: 20px;
+                    margin-left: 20px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
                 }
 
-                .text {
-                    margin-left: 15px;
-                    margin-top: 5px;
+                input {
+                    background-color: #A3DBEF;
+                }
+
+                .radius {
+                    border-radius: 20px;
                     margin-bottom: 10px;
+                    height: 25px;
+                }
+
+                .layout {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    margin-top: 15px;
+                }
+
+                #richiesta {
+                    height: 75px;
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    margin-bottom: 10px;
+                }
+
+                #mail {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+
+                .privacy {
+                    display: flex;
+                    flex-direction: row;
+
+                    .checkbox {
+                        margin-left: 25px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+
+                    .text {
+                        margin-left: 15px;
+                        margin-right: 20px;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 40em) {
+                .form {
+                    flex: 1 50%;
                 }
             }
         }
 
         @media only screen and (min-width: 40em) {
-            .form {
-                flex: 1 50%;
+            .padding {
+                margin-right: 150px;
+                margin-left: 115px;
             }
         }
-    }
 
-    &--sostenibiità {
-        flex-basis: 100%;
-        height: 40%;
-        display: flex;
-        flex-wrap: wrap;
+        // &--sostenibiità {
+        //     flex-basis: 100%;
+        //     height: 40%;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        // }
+
+
     }
 
     &--logo {
         flex-basis: 100%;
         height: 20%;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+
+        // .ciao {
+        //     background-color: #F29100;
+        //     border-radius: 20px;
+        //     height: 15px;
+        //     margin-top: 10px;
+        //     width: 100%;
+        // }
     }
 }
