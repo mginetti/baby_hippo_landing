@@ -28,6 +28,42 @@ body {
       flex-wrap: wrap;
 }
 
+.container .title {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .title h1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 5px;
+  height: 0.5em;
+  background-color: #F29100;
+}
+
+.container .title h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 5px;
+  height: 0.5em;
+  background-color: #F29100;
+}
+
 .jumbotrom {
   padding: 15px;
   padding-bottom: 0;
@@ -104,6 +140,14 @@ body {
           flex: 1 100%;
 }
 
+.about--title h1 {
+  color: #F29100;
+}
+
+.about--title h1 h1 {
+  color: #A3DBEF;
+}
+
 .about--img {
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
@@ -152,6 +196,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .arguments--desc {
@@ -188,10 +236,11 @@ body {
 }
 
 .arguments--arguments .argument--img img {
-  background-color: #F29100;
-  border: 15px #F29100 solid;
+  border: 0px #F29100 solid;
   border-radius: 10px;
   height: 100%;
+  -webkit-box-shadow: 2px 1px 2px 1px #5a5a5a;
+          box-shadow: 2px 1px 2px 1px #5a5a5a;
 }
 
 .arguments--arguments .argument--desc {
@@ -263,8 +312,8 @@ body {
 .mascottes--mascottes .mascotte--img img {
   height: 100%;
   border-radius: 10px;
-  border: #F29100 15px solid;
-  background-color: #F29100;
+  -webkit-box-shadow: 2px 1px 2px 1px #5a5a5a;
+          box-shadow: 2px 1px 2px 1px #5a5a5a;
 }
 
 .mascottes--mascottes .mascotte--desc {

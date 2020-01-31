@@ -19,4 +19,32 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    .title {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        h1::before {
+			content:"";
+			position: absolute;
+			top: 50%;
+			width: 20%;
+			left: 0;
+			transform: translateY(-50%);
+			border-radius: 5px;
+			height: 0.5em;
+			background-color: $primary;
+		}
+		h1::after {
+			content:"";
+			position: absolute;
+			top: 50%;
+			width: 20%;
+			right: 0;
+			transform: translateY(-50%);
+			border-radius: 5px;
+			height: 0.5em;
+			background-color: $primary;
+		}
+    }
 }
