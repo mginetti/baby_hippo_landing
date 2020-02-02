@@ -63,6 +63,7 @@
                 flex-basis: 100%;
                 display: flex;
                 flex-direction: row;
+                height: 200px;
                 // margin-bottom: 10px;
                 // margin-left: 10px;
                 align-items: center;
@@ -70,16 +71,29 @@
 
                 .card {
                     border-radius: 20px;
-                    height: 80%;
+                    height: 50%;
                 }
             }
 
             @media only screen and (min-width: 40em) {
+                iframe{
+                    min-height: 500px;
+                    position: absolute;
+                    background-position: top;
+                }
+
                 .mappa {
+                    margin-top: 8px;
                     flex: 1 50%;
                     min-width: 300px;
-                    min-height: 300px;
+                    min-height: 600px;
                     // align-items: flex-end;
+
+                    .card{
+                        height: 79%;
+                        padding: 0px;
+                        margin: 0px;
+                    }
                 }
             }
 
@@ -183,6 +197,9 @@
 
             .link {
                 margin: 20px;
+                display: flex;
+                text-align: center;
+                justify-content: center;
             }
 
             .social {
@@ -190,6 +207,8 @@
                 text-align: center;
                 border-radius: 20px;
                 margin-bottom: 10px;
+                flex-direction: column;
+                // margin-top: 20px;
 
                 .container {
                     margin: 60px auto 0px auto;
