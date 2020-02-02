@@ -64,8 +64,6 @@
                 display: flex;
                 flex-direction: row;
                 height: 400px;
-                // margin-bottom: 10px;
-                // margin-left: 10px;
                 align-items: center;
                 justify-content: center;
 
@@ -87,7 +85,6 @@
                     flex: 1 50%;
                     min-width: 300px;
                     min-height: 600px;
-                    // align-items: flex-end;
 
                     .card{
                         height: 79%;
@@ -101,7 +98,6 @@
                 flex-basis: 100%;
                 display: flex;
                 flex-direction: column;
-                // justify-content: center;
 
                 button {
                     width: 100px;
@@ -189,9 +185,6 @@
                 margin-right: 90px;
                 margin-left: 10px;
                 margin-top: 20px;
-                // width: 100%;
-                // height: 100px;
-                // background-repeat: no-repeat;
                 background-size: contain;
             }
 
@@ -208,7 +201,6 @@
                 border-radius: 20px;
                 margin-bottom: 10px;
                 flex-direction: column;
-                // margin-top: 20px;
 
                 .container {
                     margin: 60px auto 0px auto;
@@ -251,7 +243,6 @@
                     .buttons {
                         display: flex;
                         justify-content: center;
-                        // background-color: #A3DBEF;
                     }
 
                     a {
@@ -261,7 +252,6 @@
                         }
                     }
                 }
-
 
                 .effect {
 
