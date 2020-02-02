@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -532,9 +533,11 @@ body {
 }
 
 .footer--contatti {
+  background-image: url(assets/img/OndaUffOK.png);
+  background-repeat: no-repeat;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 40%;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,7 +666,7 @@ body {
 }
 
 .footer--contatti .padding .form input {
-  background-color: #A3DBEF;
+  background-color: #619fac;
 }
 
 .footer--contatti .padding .form .radius {
@@ -688,6 +691,11 @@ body {
 .footer--contatti .padding .form #mail {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.footer--contatti .padding .form #bottone {
+  color: #619fac;
+  cursor: pointer;
 }
 
 .footer--contatti .padding .form .privacy {
@@ -723,23 +731,173 @@ body {
 
 @media only screen and (min-width: 40em) {
   .footer--contatti .padding {
-    margin-right: 150px;
-    margin-left: 115px;
+    margin-right: 200px;
+    margin-left: 150px;
   }
 }
 
-.footer--logo {
+.footer--contatti .bottom {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.footer--contatti .bottom .logo {
+  background: url(assets/img/Logo2.png);
+  margin-right: 90px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-size: contain;
+}
+
+.footer--contatti .bottom .link {
+  margin: 20px;
+}
+
+.footer--contatti .bottom .social {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.footer--contatti .bottom .social .container {
+  margin: 60px auto 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.footer--contatti .bottom .social .container span {
+  display: inline-block;
+}
+
+.footer--contatti .bottom .social .container span:before, .footer--contatti .bottom .social .container span:after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 2px;
+  margin: 0px 0px 0px 2px;
+}
+
+.footer--contatti .bottom .social .effect {
+  width: 100%;
+}
+
+.footer--contatti .bottom .social .effect h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.footer--contatti .bottom .social .effect:nth-child(2) {
+  margin-top: 50px;
+}
+
+.footer--contatti .bottom .social .effect .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer--contatti .bottom .social .effect a:last-child {
+  margin-right: 0px;
+}
+
+.footer--contatti .bottom .social .effect a {
+  text-decoration: none !important;
+  background-color: #A3DBEF;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer--contatti .bottom .social .effect a i {
+  position: relative;
+  z-index: 3;
+}
+
+.footer--contatti .bottom .social .effect a.fb {
+  background-color: #3b5998;
+  color: white;
+}
+
+.footer--contatti .bottom .social .effect a.insta {
+  background-color: #bc2a8d;
+  color: white;
+}
+
+.footer--contatti .bottom .social .effect.jaques a {
+  width: 70px;
+  height: 70px;
+  -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+  transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+
+.footer--contatti .bottom .social .effect.jaques a:hover {
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 40em) {
+  .footer--contatti .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer--contatti .bottom .logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .footer--contatti .bottom .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .footer--contatti .bottom .social {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
