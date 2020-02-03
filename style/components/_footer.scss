@@ -1,12 +1,14 @@
 .footer {
     height: 100vh;
     padding: 0px;
-    width: auto;
     display: flex;
     flex-direction: column;
 
     &--contatti {
+        background-image: url(assets/img/OndaUffOK.png);
+        background-repeat: no-repeat;
         flex-basis: 100%;
+        background-color: transparent;
         display: flex;
         flex-wrap: wrap;
 
@@ -31,22 +33,22 @@
             .barre {
                 display: flex;
                 flex-direction: column;
-                width: 30%;
-                margin-left: 10px;
-                margin-right: 10px;
+                width: 25%;
 
                 .barra {
-                    background-color: $primary;
-                    border-radius: 10px;
+                    background-color: #F29100;
+                    border-radius: 20px;
                     min-height: 15px;
                     margin-top: 10px;
+                    margin-right: 50px;
+                    margin-left: 50px;
                 }
 
                 @media only screen and (min-width: 40em) {
                     .barra {
                         width: 80%;
-                        margin-right: 30px;
-                        margin-left: 30px;
+                        margin-right: 50px;
+                        margin-left: 50px;
                     }
                 }
             }
@@ -61,18 +63,18 @@
                 flex-basis: 100%;
                 display: flex;
                 flex-direction: row;
-                height: 200px;
+                height: 400px;
                 align-items: center;
                 justify-content: center;
 
                 .card {
                     border-radius: 20px;
-                    height: 100%;
+                    height: 50%;
                 }
             }
 
             @media only screen and (min-width: 40em) {
-                iframe {
+                iframe{
                     min-height: 500px;
                     position: absolute;
                     background-position: top;
@@ -84,7 +86,7 @@
                     min-width: 300px;
                     min-height: 600px;
 
-                    .card {
+                    .card{
                         height: 79%;
                         padding: 0px;
                         margin: 0px;
@@ -134,7 +136,7 @@
                     margin-bottom: 15px;
                 }
 
-                #bottone {
+                #bottone{
                     color: #619fac;
                     cursor: pointer;
                 }
@@ -181,21 +183,16 @@
             .logo {
                 background: url(assets/img/Logo2.png);
                 margin-right: 90px;
-                margin-left: 90px;
+                margin-left: 10px;
                 margin-top: 20px;
-                background-size: cover;
+                background-size: contain;
             }
 
             .link {
                 margin: 20px;
                 display: flex;
-                flex-direction: column;
                 text-align: center;
                 justify-content: center;
-
-                .copyright {
-                    margin-top: 10px;
-                }
             }
 
             .social {
@@ -311,16 +308,10 @@
 
                 .logo {
                     flex: 1;
-                    background: url(assets/img/Logo2.png);
-                    margin-right: 100px;
-                    margin-left: 10px;
-                    margin-top: 20px;
-                    background-size: cover;
                 }
 
                 .link {
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     flex: 1;
@@ -330,21 +321,6 @@
                     flex: 1;
                 }
             }
-        }
-    }
-
-    @media only screen and (min-width: 40em) {
-        .background {
-            height: 100%;
-            width: 100%;
-            margin-top: 50px;
-            position: absolute;
-            z-index: -1;
-            opacity: 0.6;
-            background-image: url("/assets/img/w.png");
-            background-repeat: no-repeat;
-            background-position: top;
-            background-size: contain;
         }
     }
 }

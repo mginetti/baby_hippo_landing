@@ -1,12 +1,12 @@
 const init = () => {
-	const mobile = isMobile();
+    const mobile = isMobile();
 
 };
 
 // Check if is mobile
 const isMobile = () => {
 	var check = false;
-	(function (a) {
+	(function(a) {
 		if (
 			/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
 				a
@@ -23,22 +23,19 @@ const isMobile = () => {
 
 init()
 
-function myContatti() {
+function myContatti() { 
 	var element = document.getElementById("footer");
 	element.scrollIntoView();
-}
-
+  }
 function myMascotte() {
 	var element = document.getElementById("mascotte");
 	element.scrollIntoView();
-}
-
+  }
 function myArgomenti() {
 	var element = document.getElementById("argomenti");
 	element.scrollIntoView();
-}
-
+  }
 function myIntro() {
 	var element = document.getElementById("about");
 	element.scrollIntoView();
-}
+  }

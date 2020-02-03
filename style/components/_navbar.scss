@@ -1,10 +1,8 @@
 .navbar {
 	max-height: 75px;
-
 	img {
 		height: 75px;
 	}
-
 	label .menu {
 		position: absolute;
 		right: 10px;
@@ -57,33 +55,31 @@
 		display: none;
 	}
 
-	label input:checked+.menu {
+	label input:checked + .menu {
 		box-shadow: 0 0 0 100vw lightblue, 0 0 0 100vh lightblue;
 		border-radius: 0;
 	}
-
-	label input:checked+.menu {
+	label input:checked + .menu {
 		background-color: lightblue;
 	}
-
-	label input:checked+.menu .hamburger {
+	label input:checked + .menu .hamburger {
 		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}
 
-	label input:checked+.menu .hamburger:after {
+	label input:checked + .menu .hamburger:after {
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg);
 		bottom: 0;
 	}
 
-	label input:checked+.menu .hamburger:before {
+	label input:checked + .menu .hamburger:before {
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg);
 		top: 0;
 	}
 
-	label input:checked+.menu+ul {
+	label input:checked + .menu + ul {
 		opacity: 1;
 	}
 
