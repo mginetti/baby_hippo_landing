@@ -523,6 +523,7 @@ body {
 .footer {
   height: 100vh;
   padding: 0px;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,8 +578,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 30%;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer--contatti .titolo .barre .barra {
