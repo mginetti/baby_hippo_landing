@@ -124,7 +124,23 @@ body {
 }
 
 .about {
-  width: 100%;
+  width: calc(100%);
+  background-image: url(../assets/img/about/Onde_ok_back.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.about h1 {
+  color: #F29100;
+  text-align: center;
 }
 
 .about--title {
@@ -139,45 +155,52 @@ body {
           flex: 1 100%;
 }
 
-.about--title h1 {
-  color: #F29100;
+.about--title h3 {
+  color: #A3DBEF;
+  text-align: center;
 }
 
-.about--title h1 h1 {
-  color: #A3DBEF;
+.about--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about--row .col {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  position: relative;
 }
 
 .about--img {
   -webkit-box-flex: 1;
-      -ms-flex: 1 100%;
-          flex: 1 100%;
-  padding: 15px;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .about--img img {
-  border-radius: 10px;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
 }
 
 .about--text {
   -webkit-box-flex: 1;
-      -ms-flex: 1 100%;
-          flex: 1 100%;
-  padding: 15px;
-  margin-top: 15px;
-}
-
-@media only screen and (min-width: 40em) {
-  .about--img {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 50%;
-            flex: 1 50%;
-  }
-  .about--text {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 50%;
-            flex: 1 50%;
-  }
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .arguments {

@@ -1,38 +1,50 @@
+
 .about {
-    width: 100%;
+    width: calc(100%);
+    background-image: url(../assets/img/about/Onde_ok_back.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    h1 {
+        color: $primary;
+        text-align: center;
+    }
     &--title {
         display: flex;
         justify-content: center;
         flex: 1 100%;
-        h1 {
-            color: $primary;
-            h1 {
-                color: $secondary;
-            }
+        h3 {
+            color: $secondary;
+            text-align: center;
         }
     }
+    &--row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .col {
+            flex-basis: 100%;
+            position: relative;
+        }
+        @media only screen and (min-width: 35em){
+            
+        }
+
+    }
     &--img {
-        flex: 1 100%;
-        padding: $padding;
+        flex: 1;
+
         img {
-            border-radius: 10px;
-            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
         }
     }
     &--text {
-        flex: 1 100%;
-        padding: $padding;
-        margin-top: $margin;
+        flex: 1;
     }
-
-    @media only screen and (min-width: 40em) {
-        &--img {
-            flex: 1 50%;
-            
-        }
-        &--text {
-            flex: 1 50%;
-        }
-    }
-
 }
