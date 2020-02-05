@@ -168,6 +168,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -545,7 +548,6 @@ body {
 
 .footer {
   height: 100vh;
-  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,11 +558,8 @@ body {
 }
 
 .footer--contatti {
-  background-image: url(assets/img/OndaUffOK.png);
-  background-repeat: no-repeat;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,11 +785,13 @@ body {
 }
 
 .footer--contatti .bottom .logo {
-  background: url(assets/img/Logo2.png);
-  margin-right: 90px;
-  margin-left: 10px;
-  margin-top: 20px;
+  background-image: url(../assets/img/Logo2.png);
+  height: 120px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .footer--contatti .bottom .link {
@@ -808,8 +809,14 @@ body {
           justify-content: center;
 }
 
-.footer--contatti .bottom .link h4 {
+.footer--contatti .bottom .link a h4 {
   margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer--contatti .bottom .link a:hover {
+  text-decoration: underline;
 }
 
 .footer--contatti .bottom .social {
@@ -930,6 +937,15 @@ body {
             flex-direction: row;
   }
   .footer--contatti .bottom .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -949,9 +965,39 @@ body {
             flex: 1;
   }
   .footer--contatti .bottom .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .sfondo {
+    background-image: url(../assets/img/w.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 /*# sourceMappingURL=style.css.map */

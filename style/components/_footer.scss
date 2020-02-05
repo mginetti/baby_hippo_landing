@@ -1,14 +1,10 @@
 .footer {
     height: 100vh;
-    padding: 0px;
     display: flex;
     flex-direction: column;
 
     &--contatti {
-        background-image: url(assets/img/OndaUffOK.png);
-        background-repeat: no-repeat;
         flex-basis: 100%;
-        background-color: transparent;
         display: flex;
         flex-wrap: wrap;
 
@@ -181,11 +177,15 @@
             flex-wrap: wrap;
 
             .logo {
-                background: url(assets/img/Logo2.png);
-                margin-right: 90px;
-                margin-left: 10px;
-                margin-top: 20px;
+                background-image: url(../assets/img/Logo2.png);
+                height: 120px;
+                // margin-right: 120px;
+                // margin-left: 120px;
+                margin-top: 10px;
+                margin-bottom: 10px;
                 background-size: contain;
+                background-repeat: no-repeat;
+                z-index: 1;
             }
 
             .link {
@@ -195,8 +195,13 @@
                 text-align: center;
                 justify-content: center;
 
-                h4{
+                a h4 {
                     margin-top: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+                a:hover{
+                    text-decoration: underline;
                 }
             }
 
@@ -312,6 +317,9 @@
                 flex-direction: row;
 
                 .logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     flex: 1;
                 }
 
@@ -323,9 +331,27 @@
                 }
 
                 .social {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     flex: 1;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    .footer {
+        display: flex;
+        padding: 15px;
+        flex-direction: row;
+        align-items: center;
+
+        .sfondo {
+            background-image: url(../assets/img/w.png);
+            background-repeat: no-repeat;
+            background-size: contain;
         }
     }
 }
