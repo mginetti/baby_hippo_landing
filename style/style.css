@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-  padding: 15px 65px 15px 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +122,7 @@ body {
 }
 
 .about {
-  height: 70vh;
+  min-height: 70vh;
   width: calc(100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,6 +173,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 15px 65px 15px 65px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -184,6 +184,7 @@ body {
 
 .about--row .sosten img {
   height: 80px;
+  padding: 5px;
 }
 
 .about--row .col {
@@ -226,6 +227,10 @@ body {
           flex: 1;
 }
 
+.tt {
+  padding: 7px;
+}
+
 .arguments {
   background-color: white;
   position: relative;
@@ -252,9 +257,11 @@ body {
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
+  padding: 15px 65px 15px 65px;
 }
 
 .arguments--arguments {
+  padding: 15px 65px 15px 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,6 +328,7 @@ body {
 }
 
 .mascottes--desc {
+  padding: 15px 65px 15px 65px;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
@@ -328,6 +336,7 @@ body {
 }
 
 .mascottes--mascottes {
+  padding: 15px 65px 15px 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

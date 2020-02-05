@@ -1,67 +1,71 @@
 .mascottes {
-	background-color: white;
-	&--title {
-		flex: 1 100%;
-		display: flex;
-		justify-content: center;
-	}
-	&--desc {
-		flex: 1 100%;
-		margin-top: $margin;
-	}
-	&--mascottes {
-		display: flex;
-		flex-direction: row;
+    background-color: white;
+    &--title {
+        flex: 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &--desc {
+        padding: $padding;
+
+        flex: 1 100%;
+        margin-top: $margin;
+    }
+    &--mascottes {
+		padding: $padding;
+
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-		.mascotte {
-			margin-top: $margin;
-			flex-basis: 100%;
-			position: relative;
-			&--img {
-				position: relative;
-				text-align: center;
-				height: 250px;
-				z-index: 1;
-				
-				img {
-					height: 100%;
-					border-radius: 10px;
-					//border: $primary 15px solid;
-					box-shadow: 2px 1px 2px 1px rgb(90, 90, 90);
-					//background-color: $primary;
-				}
-			}
-			&--desc {
-				margin-top: $margin;
-				padding: $padding;
-				text-align: center;
-				.btn {
-					border: none;
-					background-color: $primary;
-					border-radius: 10px;
-					padding: 12px 35px;
-					color: white;
-				}
-			}
-		}
-		@media only screen and (min-width: 40em) {
-			.mascotte {
-				flex: 1 50%;
+        .mascotte {
+            margin-top: $margin;
+            flex-basis: 100%;
+            position: relative;
+            &--img {
+                position: relative;
+                text-align: center;
+                height: 250px;
+                z-index: 1;
 
-				&--img {
-					height: 350px;
-				}
-			}
-		}
-		@media only screen and (min-width: 75em) {
-			.mascotte {
-				flex: 1 calc(25% - 30px);
+                img {
+                    height: 100%;
+                    border-radius: 10px;
+                    //border: $primary 15px solid;
+                    box-shadow: 2px 1px 2px 1px rgb(90, 90, 90);
+                    //background-color: $primary;
+                }
+            }
+            &--desc {
+                margin-top: $margin;
+                padding: $padding;
+                text-align: center;
+                .btn {
+                    border: none;
+                    background-color: $primary;
+                    border-radius: 10px;
+                    padding: 12px 35px;
+                    color: white;
+                }
+            }
+        }
+        @media only screen and (min-width: 40em) {
+            .mascotte {
+                flex: 1 50%;
 
-				&--img {
-					height: 350px;
-				}
-			}
-		}
-	}
+                &--img {
+                    height: 350px;
+                }
+            }
+        }
+        @media only screen and (min-width: 75em) {
+            .mascotte {
+                flex: 1 calc(25% - 30px);
+
+                &--img {
+                    height: 350px;
+                }
+            }
+        }
+    }
 }

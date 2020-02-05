@@ -12,8 +12,11 @@
 	&--desc {
 		flex: 1 100%;
 		margin-top: $margin;
+		padding: $padding;
 	}
 	&--arguments {
+		padding: $padding;
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
