@@ -1,10 +1,21 @@
 
 .about {
+    height: 70vh;
+    .back {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background-image: url(../assets/img/about/w.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        opacity: 0.6;
+        
+    }
     width: calc(100%);
-    background-image: url(../assets/img/about/Onde_ok_back.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
     display: flex;
     justify-content: center;
     position: relative;
@@ -25,23 +36,31 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        .sosten {
+            img {
+                height: 80px;
+            }
+        }
         .col {
             flex-basis: 100%;
             position: relative;
         }
         @media only screen and (min-width: 35em){
-            
+            .col {
+                flex-basis: 33%;
+            }
         }
 
     }
     &--img {
         flex: 1;
-
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
         img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
+            height: 100%;
         }
     }
     &--text {
