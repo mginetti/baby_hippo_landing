@@ -14,8 +14,6 @@ body {
 }
 
 .container {
-  padding: 15px;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +45,7 @@ body {
           transform: translateY(-50%);
   border-radius: 5px;
   height: 0.5em;
-  background-color: #F29100;
+  background-color: #f29100;
 }
 
 .container .title h1::after {
@@ -60,7 +58,7 @@ body {
           transform: translateY(-50%);
   border-radius: 5px;
   height: 0.5em;
-  background-color: #F29100;
+  background-color: #f29100;
 }
 
 .jumbotrom {
@@ -104,7 +102,7 @@ body {
 
 .waves {
   height: 10vh;
-  padding: 15px;
+  padding: 15px 65px 15px 65px;
   padding-top: 0;
   position: relative;
   z-index: -1;
@@ -124,11 +122,8 @@ body {
 }
 
 .about {
+  min-height: 70vh;
   width: calc(100%);
-  background-image: url(../assets/img/about/Onde_ok_back.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,8 +133,22 @@ body {
   position: relative;
 }
 
+.about .back {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: url(../assets/img/about/w.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  opacity: 0.6;
+}
+
 .about h1 {
-  color: #F29100;
+  color: #f29100;
   text-align: center;
 }
 
@@ -156,7 +165,7 @@ body {
 }
 
 .about--title h3 {
-  color: #A3DBEF;
+  color: #a3dbef;
   text-align: center;
 }
 
@@ -164,6 +173,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 15px 65px 15px 65px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -175,19 +185,29 @@ body {
       flex-wrap: wrap;
 }
 
+.about--row .sosten img {
+  height: 80px;
+  padding: 5px;
+}
+
 .about--row .col {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   position: relative;
 }
 
+@media only screen and (min-width: 35em) {
+  .about--row .col {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
+
 .about--img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.about--img img {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,10 +220,18 @@ body {
   height: 100px;
 }
 
+.about--img img {
+  height: 100%;
+}
+
 .about--text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.tt {
+  padding: 7px;
 }
 
 .arguments {
@@ -232,9 +260,11 @@ body {
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
+  padding: 15px 65px 15px 65px;
 }
 
 .arguments--arguments {
+  padding: 15px 65px 15px 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +291,7 @@ body {
 }
 
 .arguments--arguments .argument--img img {
-  border: 0px #F29100 solid;
+  border: 0px #f29100 solid;
   border-radius: 10px;
   height: 100%;
   -webkit-box-shadow: 2px 1px 2px 1px #5a5a5a;
@@ -270,7 +300,7 @@ body {
 
 .arguments--arguments .argument--desc {
   margin-top: 15px;
-  padding: 15px;
+  padding: 15px 65px 15px 65px;
 }
 
 @media only screen and (min-width: 40em) {
@@ -301,6 +331,7 @@ body {
 }
 
 .mascottes--desc {
+  padding: 15px 65px 15px 65px;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
@@ -308,6 +339,7 @@ body {
 }
 
 .mascottes--mascottes {
+  padding: 15px 65px 15px 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,13 +375,13 @@ body {
 
 .mascottes--mascottes .mascotte--desc {
   margin-top: 15px;
-  padding: 15px;
+  padding: 15px 65px 15px 65px;
   text-align: center;
 }
 
 .mascottes--mascottes .mascotte--desc .btn {
   border: none;
-  background-color: #F29100;
+  background-color: #f29100;
   border-radius: 10px;
   padding: 12px 35px;
   color: white;
@@ -512,7 +544,7 @@ body {
 }
 
 .topbar--menu {
-  background-color: #F29100;
+  background-color: #f29100;
   border-radius: 15px;
   margin-left: 15px;
   -ms-flex-preferred-size: 100%;
@@ -995,7 +1027,7 @@ body {
             align-items: center;
   }
   .footer .sfondo {
-    background-image: url(../assets/img/w.png);
+    background-image: url(../assets/img/waves.png);
     background-repeat: no-repeat;
     background-size: contain;
   }

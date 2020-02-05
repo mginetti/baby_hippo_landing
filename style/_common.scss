@@ -14,8 +14,6 @@ body {
 }
 
 .container {
-    padding: $padding;
-    min-height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
