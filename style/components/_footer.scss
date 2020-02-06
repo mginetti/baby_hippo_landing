@@ -177,12 +177,15 @@
             flex-wrap: wrap;
 
             .logo {
-                background-image: url(../assets/img/Logo2.png);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 height: 120px;
-                // margin-right: 120px;
-                // margin-left: 120px;
+                width: 50%;
                 margin-top: 10px;
-                margin-bottom: 10px;
+                margin-left: auto;
+                margin-right:auto;
                 background-size: contain;
                 background-repeat: no-repeat;
                 z-index: 1;
@@ -318,9 +321,17 @@
 
                 .logo {
                     display: flex;
-                    align-items: center;
+                    flex-direction: column;
                     justify-content: center;
-                    flex: 1;
+                    align-items: center;
+                    height: 100px;
+                    width: 20%;
+                    margin-top: 10px;
+                    margin-left: auto;
+                    margin-right:auto;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    z-index: 1;
                 }
 
                 .link {
@@ -347,11 +358,19 @@
         padding: 15px;
         flex-direction: row;
         align-items: center;
+        position: relative;
 
         .sfondo {
             background-image: url(../assets/img/waves.png);
             background-repeat: no-repeat;
             background-size: contain;
+            position: absolute;
+            z-index: -1;
+            top: 10%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.6;
         }
     }
 }
