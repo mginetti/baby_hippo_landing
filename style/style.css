@@ -691,7 +691,7 @@ body {
 
 @media only screen and (min-width: 40em) {
   .footer--contatti .padding iframe {
-    min-height: 500px;
+    min-height: 00px;
     position: absolute;
     background-position: top;
   }
@@ -704,7 +704,7 @@ body {
     min-height: 600px;
   }
   .footer--contatti .padding .mappa .card {
-    height: 79%;
+    height: 50%;
     padding: 0px;
     margin: 0px;
   }
@@ -999,10 +999,9 @@ body {
     height: 100px;
     width: 20%;
     margin-top: 10px;
-    margin-left: 10%;
-    margin-right: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     background-size: contain;
-    background-repeat: no-repeat;
     z-index: 1;
   }
   .footer--contatti .bottom .link {
