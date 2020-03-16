@@ -152,6 +152,10 @@ body {
   text-align: center;
 }
 
+.about--title1 {
+  margin: 20px;
+}
+
 .about--title {
   display: -webkit-box;
   display: -ms-flexbox;
