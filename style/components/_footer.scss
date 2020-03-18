@@ -8,13 +8,14 @@
         display: flex;
         flex-wrap: wrap;
 
-        .title{
+        .title {
             justify-content: center;
             flex: 1 100%;
             display: flex;
         }
+
         @media only screen and (min-width: 40em) {
-            .title{
+            .title {
                 margin-bottom: 65px;
             }
         }
@@ -64,21 +65,21 @@
                 display: flex;
                 flex-direction: column;
 
-                button {
-                    width: 100px;
-                    height: 20px;
-                    border-radius: 20px;
-                    margin-left: 20px;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
+                #bottone {
+                    align-items: center;
+                    justify-content: center;
+                    width: 150px;
+                    height: 50px;
+                    color: #619fac;
+                    cursor: pointer;
                 }
 
                 input {
-                    background-color: #619fac;
+                    background-color: #a3dbef;
                 }
 
                 .radius {
-                    border-radius: 20px;
+                    border-radius: 10px;
                     margin-bottom: 10px;
                     height: 25px;
                 }
@@ -99,11 +100,6 @@
                 #mail {
                     margin-top: 15px;
                     margin-bottom: 15px;
-                }
-
-                #bottone {
-                    color: #619fac;
-                    cursor: pointer;
                 }
 
                 .privacy {
@@ -129,6 +125,11 @@
                 .form {
                     flex: 1 50%;
                 }
+
+                #bottone {
+                    margin-left: 150px;
+                    margin-top: 20px;
+                }
             }
         }
 
@@ -152,9 +153,9 @@
                 align-items: center;
                 height: 120px;
                 width: 50%;
-                margin-top: 10px;
+                margin-top: 20px;
                 margin-left: auto;
-                margin-right:auto;
+                margin-right: auto;
                 background-size: contain;
                 background-repeat: no-repeat;
                 z-index: 1;
@@ -172,7 +173,8 @@
                     text-decoration: none;
                     color: black;
                 }
-                a:hover{
+
+                a:hover {
                     text-decoration: underline;
                 }
             }
@@ -181,8 +183,8 @@
                 justify-content: center;
                 text-align: center;
                 border-radius: 20px;
-                margin-bottom: 10px;
                 flex-direction: column;
+                margin: 20px;
 
                 .container {
                     margin: 60px auto 0px auto;

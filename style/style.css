@@ -727,21 +727,25 @@ body {
           flex-direction: column;
 }
 
-.footer--contatti .padding .form button {
-  width: 100px;
-  height: 20px;
-  border-radius: 20px;
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.footer--contatti .padding .form #bottone {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 50px;
+  color: #619fac;
+  cursor: pointer;
 }
 
 .footer--contatti .padding .form input {
-  background-color: #619fac;
+  background-color: #a3dbef;
 }
 
 .footer--contatti .padding .form .radius {
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 10px;
   height: 25px;
 }
@@ -762,11 +766,6 @@ body {
 .footer--contatti .padding .form #mail {
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.footer--contatti .padding .form #bottone {
-  color: #619fac;
-  cursor: pointer;
 }
 
 .footer--contatti .padding .form .privacy {
@@ -797,6 +796,10 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
             flex: 1 50%;
+  }
+  .footer--contatti .padding #bottone {
+    margin-left: 150px;
+    margin-top: 20px;
   }
 }
 
@@ -837,7 +840,7 @@ body {
           align-items: center;
   height: 120px;
   width: 50%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   background-size: contain;
@@ -876,11 +879,11 @@ body {
           justify-content: center;
   text-align: center;
   border-radius: 20px;
-  margin-bottom: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 20px;
 }
 
 .footer--contatti .bottom .social .container {
