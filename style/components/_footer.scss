@@ -8,45 +8,14 @@
         display: flex;
         flex-wrap: wrap;
 
-        .titolo {
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
+        .title{
             justify-content: center;
-            text-align: center;
-
-            .testo_sezione {
-                width: 70%;
-            }
-
-            @media only screen and (min-width: 40em) {
-                .testo_sezione {
-                    width: 30%;
-                }
-            }
-
-            .barre {
-                display: flex;
-                flex-direction: column;
-                width: 25%;
-
-                .barra {
-                    background-color: #F29100;
-                    border-radius: 20px;
-                    min-height: 15px;
-                    margin-top: 10px;
-                    margin-right: 50px;
-                    margin-left: 50px;
-                }
-
-                @media only screen and (min-width: 40em) {
-                    .barra {
-                        width: 80%;
-                        margin-right: 50px;
-                        margin-left: 50px;
-                    }
-                }
+            flex: 1 100%;
+            display: flex;
+        }
+        @media only screen and (min-width: 40em) {
+            .title{
+                margin-bottom: 65px;
             }
         }
 
@@ -65,7 +34,7 @@
 
                 .card {
                     border-radius: 20px;
-                    height: 50%;
+                    height: 80%;
                 }
             }
 

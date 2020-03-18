@@ -1,29 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
 
 body {
-    background-color: white;
-    height: 100vh;
-    width: 100%;
+	background-color: white;
+	height: 100vh;
+	width: 100%;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 
-    .title {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        h1::before {
-			content:"";
+	.title {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+
+		h1::before {
+			content: "";
 			position: absolute;
 			top: 50%;
 			width: 20%;
@@ -32,9 +33,19 @@ body {
 			border-radius: 5px;
 			height: 0.5em;
 			background-color: $primary;
+			margin-right: 1%;
+			margin-left: 4%;
 		}
+
+		@media only screen and (min-width: 40em) {
+			h1::before {
+				margin-right: 40px;
+				margin-left: 80px;
+			}
+		}
+
 		h1::after {
-			content:"";
+			content: "";
 			position: absolute;
 			top: 50%;
 			width: 20%;
@@ -43,6 +54,15 @@ body {
 			border-radius: 5px;
 			height: 0.5em;
 			background-color: $primary;
+			margin-right: 4%;
+			margin-left: 1%;
 		}
-    }
+
+		@media only screen and (min-width: 40em) {
+			h1::after {
+				margin-right: 80px;
+				margin-left: 40px;
+			}
+		}
+	}
 }

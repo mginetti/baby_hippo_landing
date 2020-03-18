@@ -46,6 +46,15 @@ body {
   border-radius: 5px;
   height: 0.5em;
   background-color: #f29100;
+  margin-right: 1%;
+  margin-left: 4%;
+}
+
+@media only screen and (min-width: 40em) {
+  .container .title h1::before {
+    margin-right: 40px;
+    margin-left: 80px;
+  }
 }
 
 .container .title h1::after {
@@ -59,6 +68,15 @@ body {
   border-radius: 5px;
   height: 0.5em;
   background-color: #f29100;
+  margin-right: 4%;
+  margin-left: 1%;
+}
+
+@media only screen and (min-width: 40em) {
+  .container .title h1::after {
+    margin-right: 80px;
+    margin-left: 40px;
+  }
 }
 
 .jumbotrom {
@@ -122,7 +140,7 @@ body {
 }
 
 .about {
-  min-height: 70vh;
+  min-height: 50vh;
   width: calc(100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,13 +165,14 @@ body {
   opacity: 0.6;
 }
 
+.about #title {
+  font-size: 50px;
+  margin-top: 40px;
+}
+
 .about h1 {
   color: #f29100;
   text-align: center;
-}
-
-.about--title1 {
-  margin: 20px;
 }
 
 .about--title {
@@ -169,8 +188,21 @@ body {
 }
 
 .about--title h3 {
-  color: #a3dbef;
+  font-size: 25px;
+  color: #3d5984;
   text-align: center;
+}
+
+@media only screen and (min-width: 35em) {
+  .about--title h3 {
+    max-height: 100px;
+  }
+}
+
+@media only screen and (min-width: 35em) {
+  .about #title {
+    max-height: 100px;
+  }
 }
 
 .about--row {
@@ -549,7 +581,6 @@ body {
 }
 
 .topbar--menu {
-  background-color: #f29100;
   border-radius: 15px;
   margin-left: 15px;
   -ms-flex-preferred-size: 100%;
@@ -571,10 +602,15 @@ body {
 }
 
 .topbar--menu ul li a {
+  font-size: 25px;
   color: black;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+}
+
+.topbar--menu ul li a:hover {
+  color: #f29100;
 }
 
 @media only screen and (max-width: 50em) {
@@ -604,57 +640,21 @@ body {
       flex-wrap: wrap;
 }
 
-.footer--contatti .titolo {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
+.footer--contatti .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-}
-
-.footer--contatti .titolo .testo_sezione {
-  width: 70%;
-}
-
-@media only screen and (min-width: 40em) {
-  .footer--contatti .titolo .testo_sezione {
-    width: 30%;
-  }
-}
-
-.footer--contatti .titolo .barre {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 25%;
-}
-
-.footer--contatti .titolo .barre .barra {
-  background-color: #F29100;
-  border-radius: 20px;
-  min-height: 15px;
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-left: 50px;
 }
 
 @media only screen and (min-width: 40em) {
-  .footer--contatti .titolo .barre .barra {
-    width: 80%;
-    margin-right: 50px;
-    margin-left: 50px;
+  .footer--contatti .title {
+    margin-bottom: 65px;
   }
 }
 
@@ -691,7 +691,7 @@ body {
 
 .footer--contatti .padding .mappa .card {
   border-radius: 20px;
-  height: 50%;
+  height: 80%;
 }
 
 @media only screen and (min-width: 40em) {

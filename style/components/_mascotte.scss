@@ -1,27 +1,32 @@
 .mascottes {
     background-color: white;
+
     &--title {
         flex: 1 100%;
         display: flex;
         justify-content: center;
     }
+
     &--desc {
         padding: $padding;
 
         flex: 1 100%;
         margin-top: $margin;
     }
+
     &--mascottes {
-		padding: $padding;
+        padding: $padding;
 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
+
         .mascotte {
             margin-top: $margin;
             flex-basis: 100%;
             position: relative;
+
             &--img {
                 position: relative;
                 text-align: center;
@@ -36,10 +41,12 @@
                     //background-color: $primary;
                 }
             }
+
             &--desc {
                 margin-top: $margin;
                 padding: $padding;
                 text-align: center;
+
                 .btn {
                     border: none;
                     background-color: $primary;
@@ -49,6 +56,7 @@
                 }
             }
         }
+
         @media only screen and (min-width: 40em) {
             .mascotte {
                 flex: 1 50%;
@@ -58,6 +66,7 @@
                 }
             }
         }
+
         @media only screen and (min-width: 75em) {
             .mascotte {
                 flex: 1 calc(25% - 30px);
