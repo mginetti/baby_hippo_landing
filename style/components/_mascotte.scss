@@ -1,5 +1,5 @@
 .mascottes {
-    background-color: white;
+    z-index: 1;
 
     &--title {
         flex: 1 100%;
@@ -8,12 +8,13 @@
     }
 
     &--desc {
+        z-index: 1;
         padding: $padding;
 
         flex: 1 100%;
         margin-top: $margin;
 
-        p{
+        p {
             font-size: 20px;
             align-items: center;
             justify-content: center;
@@ -82,5 +83,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    .mascotte {
+        z-index: 1;
     }
 }

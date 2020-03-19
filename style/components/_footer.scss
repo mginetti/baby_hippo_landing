@@ -1,9 +1,11 @@
 .footer {
+    z-index: 1;
     height: 100vh;
     display: flex;
     flex-direction: column;
 
     &--contatti {
+        z-index: 1;
         flex-basis: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -21,6 +23,7 @@
         }
 
         .padding {
+            z-index: 1;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;

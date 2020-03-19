@@ -1,33 +1,61 @@
 .jumbotrom {
 	// padding: 15px;
+	z-index: 0;
 	padding-bottom: 0;
 	height: 100%;
+
+
 	&--img {
-		// border-radius: 10px;
+		z-index: 0;
+		position: relative;
+		top: 74px;
+		border-radius: 10px;
 		height: calc(100% - 75px);
 		background-image: url("../assets/img/Back.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
+		position: fixed;
+		right: 50%;
 
 		.hippo {
+			// opacity: 0.3;
 			position: relative;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 100%;
 			height: 100%;
+			z-index: 0;
+
 			img {
 				position: absolute;
 				bottom: 0px;
 				left: 50%;
 				transform: translateX(-49%);
 				height: 40%;
+				// opacity: 0.9;
 			}
+
 			@media only screen and (min-width: 40em) {
 				img {
 					height: 75%;
+					z-index: -1;
+					opacity: 0.8;
 				}
 			}
 		}
+	}
+
+}
+
+@media only screen and (min-width: 40em) {
+	.jumbotrom {
+		top: 100vh;
+		background-image: url("../assets/img/Back.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
 	}
 }

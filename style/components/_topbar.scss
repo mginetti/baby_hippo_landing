@@ -1,4 +1,9 @@
 .topbar {
+	opacity: 1;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: white;
 	height: 75px;
 	display: flex;
 	flex-direction: row;
