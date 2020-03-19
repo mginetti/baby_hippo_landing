@@ -80,13 +80,11 @@ body {
 }
 
 .jumbotrom {
-  padding: 15px;
   padding-bottom: 0;
   height: 100%;
 }
 
 .jumbotrom--img {
-  border-radius: 10px;
   height: calc(100% - 75px);
   background-image: url("../assets/img/Back.svg");
   background-position: center;
@@ -120,7 +118,7 @@ body {
 
 .waves {
   height: 10vh;
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
   padding-top: 0;
   position: relative;
   z-index: -1;
@@ -188,7 +186,7 @@ body {
 }
 
 .about--title h3 {
-  font-size: 25px;
+  font-size: 40px;
   color: #3d5984;
   text-align: center;
 }
@@ -209,7 +207,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -267,7 +265,19 @@ body {
 }
 
 .tt {
-  padding: 7px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 35em) {
+  .tt {
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .arguments {
@@ -297,11 +307,11 @@ body {
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
 }
 
 .arguments--arguments {
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,7 +347,7 @@ body {
 
 .arguments--arguments .argument--desc {
   margin-top: 15px;
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
 }
 
 @media only screen and (min-width: 40em) {
@@ -368,15 +378,25 @@ body {
 }
 
 .mascottes--desc {
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
 }
 
+.mascottes--desc p {
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .mascottes--mascottes {
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +432,7 @@ body {
 
 .mascottes--mascottes .mascotte--desc {
   margin-top: 15px;
-  padding: 15px 65px 15px 65px;
+  padding: 15px 20px 15px 20px;
   text-align: center;
 }
 

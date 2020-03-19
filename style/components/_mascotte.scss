@@ -12,6 +12,12 @@
 
         flex: 1 100%;
         margin-top: $margin;
+
+        p{
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &--mascottes {
