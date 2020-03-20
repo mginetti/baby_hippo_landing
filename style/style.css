@@ -80,14 +80,12 @@ body {
 }
 
 .jumbotrom {
-  z-index: 0;
   padding-bottom: 0;
   height: 100%;
 }
 
 .jumbotrom--img {
-  z-index: 0;
-  position: relative;
+  position: absolute;
   top: 74px;
   border-radius: 10px;
   height: calc(100% - 75px);
@@ -95,13 +93,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  position: fixed;
   right: 50%;
 }
 
 .jumbotrom--img .hippo {
-  position: relative;
+  position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -123,7 +119,6 @@ body {
   .jumbotrom--img .hippo img {
     height: 75%;
     z-index: -1;
-    opacity: 0.8;
   }
 }
 
@@ -134,7 +129,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
   }
 }
 
@@ -300,6 +294,7 @@ body {
     padding-left: 110px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 20px;
   }
 }
 
@@ -331,6 +326,10 @@ body {
           flex: 1 100%;
   margin-top: 15px;
   padding: 15px 20px 15px 20px;
+}
+
+.arguments--desc p {
+  font-size: 25px;
 }
 
 .arguments--arguments {
@@ -503,7 +502,6 @@ body {
 }
 
 .navbar {
-  opacity: 1;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -624,7 +622,6 @@ body {
 }
 
 .topbar {
-  opacity: 1;
   position: fixed;
   width: 100%;
   z-index: 999;

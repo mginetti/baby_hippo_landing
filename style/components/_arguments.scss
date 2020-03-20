@@ -16,6 +16,10 @@
 		flex: 1 100%;
 		margin-top: $margin;
 		padding: $padding;
+
+		p{
+			font-size: 25px;
+		}
 	}
 
 	&--arguments {

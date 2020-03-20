@@ -1,13 +1,13 @@
 .jumbotrom {
 	// padding: 15px;
-	z-index: 0;
+	// z-index: 0;
 	padding-bottom: 0;
 	height: 100%;
 
 
 	&--img {
-		z-index: 0;
-		position: relative;
+		// z-index: 0;
+		position: absolute;
 		top: 74px;
 		border-radius: 10px;
 		height: calc(100% - 75px);
@@ -15,13 +15,13 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-attachment: fixed;
-		position: fixed;
+		// background-attachment: fixed;
+		// position: fixed;
 		right: 50%;
 
 		.hippo {
 			// opacity: 0.3;
-			position: relative;
+			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 100%;
@@ -41,7 +41,7 @@
 				img {
 					height: 75%;
 					z-index: -1;
-					opacity: 0.8;
+					// opacity: 0.8;
 				}
 			}
 		}
@@ -56,6 +56,6 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-attachment: fixed;
+		// background-attachment: fixed;
 	}
 }
