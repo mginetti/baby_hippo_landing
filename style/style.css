@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
+  background-color: #fa000000;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -8,6 +9,7 @@
 }
 
 body {
+  background-color: #fa000000;
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -80,20 +82,27 @@ body {
 }
 
 .jumbotrom {
+  z-index: 0;
   padding-bottom: 0;
   height: 100%;
-}
-
-.jumbotrom--img {
-  position: absolute;
-  top: 74px;
-  border-radius: 10px;
-  height: calc(100% - 75px);
   background-image: url("../assets/img/Back.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.jumbotrom--img {
+  top: 74px;
+  position: absolute;
+  border-radius: 10px;
+  height: calc(100% - 75px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   right: 50%;
+  background-attachment: fixed;
+  position: fixed;
 }
 
 .jumbotrom--img .hippo {
@@ -103,12 +112,14 @@ body {
           transform: translateX(-50%);
   width: 100%;
   height: 100%;
-  z-index: 0;
+  background-attachment: fixed;
+  position: fixed;
 }
 
 .jumbotrom--img .hippo img {
-  position: absolute;
-  bottom: 0px;
+  background-attachment: fixed;
+  position: fixed;
+  bottom: 74px;
   left: 50%;
   -webkit-transform: translateX(-49%);
           transform: translateX(-49%);
@@ -125,7 +136,6 @@ body {
 @media only screen and (min-width: 40em) {
   .jumbotrom {
     top: 100vh;
-    background-image: url("../assets/img/Back.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,6 +164,7 @@ body {
 }
 
 .about {
+  background-color: transparent;
   z-index: 1;
   min-height: 50vh;
   width: calc(100%);
@@ -168,16 +179,10 @@ body {
 
 .about .back {
   position: absolute;
-  z-index: -1;
   height: 100%;
   width: 100%;
   top: 0;
   bottom: 0;
-  background-image: url(../assets/img/about/w.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  opacity: 0.6;
 }
 
 .about #title {
@@ -281,6 +286,12 @@ body {
           flex: 1;
 }
 
+@media only screen and (min-width: 35em) {
+  .about {
+    background-color: transparent;
+  }
+}
+
 .tt {
   padding-right: 50px;
   padding-left: 50px;
@@ -299,7 +310,7 @@ body {
 }
 
 .arguments {
-  z-index: 1;
+  background-color: transparent;
   margin-top: 30px;
   position: relative;
 }
@@ -360,6 +371,7 @@ body {
 }
 
 .arguments--arguments .argument--img img {
+  background-color: #f29100;
   border: 0px #f29100 solid;
   border-radius: 10px;
   height: 100%;
@@ -502,6 +514,9 @@ body {
 }
 
 .navbar {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 10px 10px #c1c1c1;
+          box-shadow: 0px 10px 10px #c1c1c1;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -622,6 +637,9 @@ body {
 }
 
 .topbar {
+  -webkit-box-shadow: 0px 10px 10px #c1c1c1;
+          box-shadow: 0px 10px 10px #c1c1c1;
+  opacity: 0.8;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -1111,6 +1129,7 @@ body {
 
 @media only screen and (min-width: 40em) {
   .footer {
+    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1129,12 +1148,10 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    z-index: -1;
     top: 14%;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.6;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 .arguments {
-	z-index: 1;
+	background-color: transparent;
 	margin-top: 30px;
 	position: relative;
 
@@ -17,7 +17,7 @@
 		margin-top: $margin;
 		padding: $padding;
 
-		p{
+		p {
 			font-size: 25px;
 		}
 	}
@@ -41,7 +41,7 @@
 				z-index: 1;
 
 				img {
-					//background-color: $primary;
+					background-color: $primary;
 					border: 0px $primary solid;
 					border-radius: 10px;
 					height: 100%;

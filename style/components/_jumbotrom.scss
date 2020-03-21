@@ -1,36 +1,51 @@
 .jumbotrom {
 	// padding: 15px;
-	// z-index: 0;
+	z-index: 0;
 	padding-bottom: 0;
 	height: 100%;
+	background-image: url("../assets/img/Back.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 
 
 	&--img {
-		// z-index: 0;
-		position: absolute;
+		// opacity: 0.5;
 		top: 74px;
+		position: absolute;
 		border-radius: 10px;
 		height: calc(100% - 75px);
-		background-image: url("../assets/img/Back.svg");
+		// background-image: url("../assets/img/Back.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		// background-attachment: fixed;
-		// position: fixed;
 		right: 50%;
+		background-attachment: fixed;
+		position: fixed;
+
+		// #back {
+		// 	z-index: 2;
+		// 	background-attachment: fixed;
+		// 	// position: fixed;
+		// 	height: 100%;
+		// 	width: 100%;
+		// }
 
 		.hippo {
-			// opacity: 0.3;
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 100%;
 			height: 100%;
-			z-index: 0;
+			background-attachment: fixed;
+			position: fixed;
+
 
 			img {
-				position: absolute;
-				bottom: 0px;
+				background-attachment: fixed;
+				position: fixed;
+				bottom: 74px;
 				left: 50%;
 				transform: translateX(-49%);
 				height: 40%;
@@ -52,7 +67,7 @@
 @media only screen and (min-width: 40em) {
 	.jumbotrom {
 		top: 100vh;
-		background-image: url("../assets/img/Back.svg");
+		// background-image: url("../assets/img/Back.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
