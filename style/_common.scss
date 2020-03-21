@@ -13,6 +13,14 @@ body {
 	height: 100vh;
 	width: 100%;
 	z-index: 1;
+
+	.img {
+		background-image: url("../assets/img/Back.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
 }
 
 .container {

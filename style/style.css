@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
   background-color: #fa000000;
@@ -13,6 +14,14 @@ body {
   height: 100vh;
   width: 100%;
   z-index: 1;
+}
+
+body .img {
+  background-image: url("../assets/img/Back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -82,14 +91,10 @@ body {
 }
 
 .jumbotrom {
+  top: 70px;
   z-index: 0;
   padding-bottom: 0;
   height: 100%;
-  background-image: url("../assets/img/Back.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .jumbotrom--img {
@@ -164,6 +169,7 @@ body {
 }
 
 .about {
+  top: 70px;
   background-color: transparent;
   z-index: 1;
   min-height: 50vh;
@@ -183,6 +189,9 @@ body {
   width: 100%;
   top: 0;
   bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }
 
 .about #title {
@@ -288,6 +297,7 @@ body {
 
 @media only screen and (min-width: 35em) {
   .about {
+    top: 70px;
     background-color: transparent;
   }
 }
@@ -310,6 +320,7 @@ body {
 }
 
 .arguments {
+  top: 70px;
   background-color: transparent;
   margin-top: 30px;
   position: relative;
@@ -396,12 +407,14 @@ body {
 }
 
 @media only screen and (min-width: 40em) {
-  .mascotte {
+  .arguments {
+    top: 70px;
     z-index: 1;
   }
 }
 
 .mascottes {
+  padding-top: 70px;
   z-index: 1;
 }
 
@@ -509,14 +522,13 @@ body {
 
 @media only screen and (min-width: 40em) {
   .mascotte {
+    top: 70px;
     z-index: 1;
   }
 }
 
 .navbar {
   opacity: 0.9;
-  -webkit-box-shadow: 0px 10px 10px #c1c1c1;
-          box-shadow: 0px 10px 10px #c1c1c1;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -637,8 +649,6 @@ body {
 }
 
 .topbar {
-  -webkit-box-shadow: 0px 10px 10px #c1c1c1;
-          box-shadow: 0px 10px 10px #c1c1c1;
   opacity: 0.8;
   position: fixed;
   width: 100%;
@@ -812,16 +822,28 @@ body {
 }
 
 .footer--contatti .padding .form #bottone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 150px;
+  width: 100%;
   height: 50px;
   color: #619fac;
   cursor: pointer;
+}
+
+.footer--contatti .padding .form #bottone button  {
+  width: 150px;
+  height: 50px;
 }
 
 .footer--contatti .padding .form input {
@@ -1129,11 +1151,12 @@ body {
 
 @media only screen and (min-width: 40em) {
   .footer {
+    top: 70px;
+    bottom: 0%;
     background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 15px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1142,16 +1165,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-  }
-  .footer .sfondo {
-    background-image: url(../assets/img/waves.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 14%;
-    left: 0;
-    right: 0;
-    bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

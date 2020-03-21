@@ -1,4 +1,5 @@
 .footer {
+    // top: $top;
     z-index: 1;
     height: 100vh;
     display: flex;
@@ -69,12 +70,19 @@
                 flex-direction: column;
 
                 #bottone {
+                    display: flex;
+                    flex-direction: row;
                     align-items: center;
                     justify-content: center;
-                    width: 150px;
+                    width: 100%;
                     height: 50px;
                     color: #619fac;
                     cursor: pointer;
+                    
+                    button {
+                        width: 150px;
+                        height: 50px;
+                    }
                 }
 
                 input {
@@ -330,22 +338,13 @@
 
 @media only screen and (min-width: 40em) {
     .footer {
+        top: $top;
+        bottom: 0%;
         background-color: transparent;
         display: flex;
-        padding: 15px;
+        // padding: 15px;
         flex-direction: row;
         align-items: center;
         position: relative;
-
-        .sfondo {
-            background-image: url(../assets/img/waves.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: absolute;
-            top: 14%;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
     }
 }

@@ -1,4 +1,5 @@
 .mascottes {
+    padding-top: 70px;
     z-index: 1;
 
     &--title {
@@ -88,6 +89,7 @@
 
 @media only screen and (min-width: 40em) {
     .mascotte {
+        top: $top;
         z-index: 1;
     }
 }

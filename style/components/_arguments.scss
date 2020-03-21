@@ -1,4 +1,5 @@
 .arguments {
+	top: $top;
 	background-color: transparent;
 	margin-top: 30px;
 	position: relative;
@@ -68,7 +69,8 @@
 }
 
 @media only screen and (min-width: 40em) {
-	.mascotte {
+	.arguments {
+		top: $top;
 		z-index: 1;
 	}
 }

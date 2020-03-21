@@ -1,13 +1,14 @@
 .jumbotrom {
+	top: $top;
 	// padding: 15px;
 	z-index: 0;
 	padding-bottom: 0;
 	height: 100%;
-	background-image: url("../assets/img/Back.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	// background-image: url("../assets/img/Back.svg");
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-attachment: fixed;
 
 
 	&--img {
