@@ -24,6 +24,14 @@
 		p {
 			font-size: 25px;
 		}
+
+		@media only screen and (min-width: 40em) {
+			p {
+				margin-right: 25%;
+				margin-left: 25%;
+				width: 50%;
+			}
+		}
 	}
 
 	&--arguments {
