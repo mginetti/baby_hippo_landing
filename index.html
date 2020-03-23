@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style/style.css" />
-    <title>Document</title>
+    <title>Happy Hippo</title>
 </head>
 
 <body>
@@ -21,7 +21,11 @@
         <div class="img2"></div> <!--div nuovo-->
         <div class="jumbotrom">
             <div class="navbar" id="hamburger">
-                <img src="assets/img/Logo.png" />
+                <div class="topbar--logo">
+                    <a href="#">
+                        <img src="assets/img/Logo.png" />
+                    </a>
+                </div>
                 <label>
                     <input type="checkbox" />
                     <span class="menu"> <span class="hamburger"></span> </span>
@@ -36,7 +40,9 @@
             </div>
             <div class="topbar" id="topbar">
                 <div class="topbar--logo">
-                    <img style="opacity: 1;" src="assets/img/Logo.png" alt="" />
+                    <a href="#">
+                        <img style="opacity: 1;" src="assets/img/Logo.png" alt="" />
+                    </a>
                 </div>
                 <div class="topbar--menu">
                     <ul>
@@ -111,7 +117,7 @@
                 <h1>ARGOMENTI</h1>
             </div>
             <div class="arguments--desc">
-                <p>
+                <p style="text-align: center;">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Pariatur perferendis quo dolor id esse alias modi ducimus
                     deserunt maxime sit cupiditate tempora ad, eos perspiciatis
@@ -159,7 +165,7 @@
                 <h1>MASCOTTE</h1>
             </div>
             <div class="mascottes--desc">
-                <p>
+                <p style="text-align: center;">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Pariatur perferendis quo dolor id esse <br> alias modi ducimus
                     deserunt maxime sit cupiditate tempora ad, eos perspiciatis
@@ -230,11 +236,13 @@
                             <input class="radius layout" id="richiesta" type="text" name="" id="" />
                             <div class="flex1"></div>
                             <div class="privacy">
-                                <input class="flex1 checkbox" type="checkbox" name="" id="" />
-                                <h4 class="flex4 text">
-                                    Acconsento il trattamento dei dati secondo la
-                                    Privacy Policy
-                                </h4>
+                                <input class="flex1 checkbox" type="checkbox" name="privacy" id="privacy" />
+                                <label for="privacy">
+                                    <h4 class="flex4 text">
+                                        Acconsento il trattamento dei dati secondo la
+                                        Privacy Policy
+                                    </h4>
+                                </label>
                             </div>
                             <div id="bottone">
                                 <button onclick="alert('Grazie per averci scritto')">

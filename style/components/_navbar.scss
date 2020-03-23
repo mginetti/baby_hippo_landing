@@ -5,15 +5,16 @@
 	position: fixed;
 	width: 100%;
 	background-color: white;
-	max-height: 75px;
+	max-height: 90px;
 
 	img {
+		margin: 2%;
 		height: 75px;
 	}
 
 	label .menu {
 		position: absolute;
-		right: 10px;
+		right: 2%;
 		top: 10px;
 		height: 44px;
 		width: 44px;

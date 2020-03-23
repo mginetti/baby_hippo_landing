@@ -1,4 +1,7 @@
 .mascottes {
+    margin-left: 15%;
+    margin-right: 15%;
+    
     background-color: transparent;
     padding-top: 70px;
     z-index: 1;
@@ -93,5 +96,12 @@
         background-color: transparent;
         top: $top;
         z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .mascottes {
+        margin-left: 0;
+        margin-right: 0;    
     }
 }

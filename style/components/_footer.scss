@@ -1,4 +1,7 @@
 .footer {
+    margin-left: 15%;
+    margin-right: 15%;
+
     // top: $top;
     z-index: 1;
     height: 100vh;
@@ -141,13 +144,6 @@
                     margin-left: 150px;
                     margin-top: 20px;
                 }
-            }
-        }
-
-        @media only screen and (min-width: 40em) {
-            .padding {
-                margin-right: 200px;
-                margin-left: 150px;
             }
         }
 
@@ -346,5 +342,12 @@
         flex-direction: row;
         align-items: center;
         position: relative;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .footer {
+        margin-left: 0;
+        margin-right: 0;    
     }
 }
