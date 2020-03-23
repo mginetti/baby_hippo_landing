@@ -20,7 +20,7 @@ body #transparent {
 }
 
 body .img2 {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   background-image: url("../assets/img/Back.svg");
@@ -356,6 +356,14 @@ body .img2 {
   font-size: 25px;
 }
 
+@media only screen and (min-width: 40em) {
+  .arguments--desc p {
+    margin-right: 25%;
+    margin-left: 25%;
+    width: 50%;
+  }
+}
+
 .arguments--arguments {
   padding: 15px 20px 15px 20px;
   display: -webkit-box;
@@ -444,13 +452,7 @@ body .img2 {
 }
 
 .mascottes--desc p {
-  font-size: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 25px;
 }
 
 .mascottes--mascottes {
@@ -631,7 +633,7 @@ body .img2 {
 .navbar label ul {
   z-index: 200;
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
