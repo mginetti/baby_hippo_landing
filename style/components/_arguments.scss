@@ -42,7 +42,7 @@
 				z-index: 1;
 
 				img {
-					background-color: $primary;
+					background-color: transparent;
 					border: 0px $primary solid;
 					border-radius: 10px;
 					height: 100%;
@@ -70,6 +70,7 @@
 
 @media only screen and (min-width: 40em) {
 	.arguments {
+		background-color: transparent;
 		top: $top;
 		z-index: 1;
 	}

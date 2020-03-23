@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
-  background-color: #fa000000;
+  background-color: transparent;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -10,18 +10,26 @@
 }
 
 body {
-  background-color: #fa000000;
+  background-color: transparent;
   height: 100vh;
   width: 100%;
-  z-index: 1;
 }
 
-body .img {
+body #transparent {
+  background-color: transparent;
+}
+
+body .img2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   background-image: url("../assets/img/Back.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 .container {
@@ -91,6 +99,7 @@ body .img {
 }
 
 .jumbotrom {
+  background-color: transparent;
   top: 70px;
   z-index: 0;
   padding-bottom: 0;
@@ -129,6 +138,7 @@ body .img {
   -webkit-transform: translateX(-49%);
           transform: translateX(-49%);
   height: 40%;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 40em) {
@@ -140,6 +150,7 @@ body .img {
 
 @media only screen and (min-width: 40em) {
   .jumbotrom {
+    background-color: transparent;
     top: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,17 +192,6 @@ body .img {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-.about .back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
 }
 
 .about #title {
@@ -303,6 +303,7 @@ body .img {
 }
 
 .tt {
+  background-color: transparent;
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 15px;
@@ -311,6 +312,7 @@ body .img {
 
 @media only screen and (min-width: 35em) {
   .tt {
+    background-color: transparent;
     padding-right: 110px;
     padding-left: 110px;
     padding-top: 15px;
@@ -382,7 +384,7 @@ body .img {
 }
 
 .arguments--arguments .argument--img img {
-  background-color: #f29100;
+  background-color: transparent;
   border: 0px #f29100 solid;
   border-radius: 10px;
   height: 100%;
@@ -408,12 +410,14 @@ body .img {
 
 @media only screen and (min-width: 40em) {
   .arguments {
+    background-color: transparent;
     top: 70px;
     z-index: 1;
   }
 }
 
 .mascottes {
+  background-color: transparent;
   padding-top: 70px;
   z-index: 1;
 }
@@ -522,6 +526,7 @@ body .img {
 
 @media only screen and (min-width: 40em) {
   .mascotte {
+    background-color: transparent;
     top: 70px;
     z-index: 1;
   }
