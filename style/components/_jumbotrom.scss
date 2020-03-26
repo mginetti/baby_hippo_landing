@@ -1,38 +1,22 @@
 .jumbotrom {
 	background-color: transparent;
 	top: $top;
-	// padding: 15px;
 	z-index: 0;
 	padding-bottom: 0;
 	height: 100%;
-	// background-image: url("../assets/img/Back.svg");
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// background-size: cover;
-	// background-attachment: fixed;
 
 
 	&--img {
-		// opacity: 0.5;
 		top: 74px;
 		position: absolute;
 		border-radius: 10px;
 		height: calc(100% - 75px);
-		// background-image: url("../assets/img/Back.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		right: 50%;
 		background-attachment: fixed;
 		position: fixed;
-
-		// #back {
-		// 	z-index: 2;
-		// 	background-attachment: fixed;
-		// 	// position: fixed;
-		// 	height: 100%;
-		// 	width: 100%;
-		// }
 
 		.hippo {
 			position: absolute;
@@ -58,7 +42,6 @@
 				img {
 					height: 75%;
 					z-index: -1;
-					// opacity: 0.8;
 				}
 			}
 		}
@@ -70,10 +53,8 @@
 	.jumbotrom {
 		background-color: transparent;
 		top: 100vh;
-		// background-image: url("../assets/img/Back.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		// background-attachment: fixed;
 	}
 }
