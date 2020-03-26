@@ -1,0 +1,141 @@
+.contatti {
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+
+    .title {
+        justify-content: center;
+        flex: 1 100%;
+        display: flex;
+    }
+
+    @media only screen and (min-width: 40em) {
+        .title {
+            margin-bottom: 65px;
+        }
+    }
+
+    .padding {
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .mappa {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+
+            .card {
+                border-radius: 5px;
+                height: 80%;
+            }
+        }
+
+        @media only screen and (min-width: 40em) {
+            iframe {
+                min-height: 00px;
+                position: absolute;
+                background-position: top;
+            }
+
+            .mappa {
+                margin-top: 8px;
+                flex: 1 50%;
+                min-width: 300px;
+                min-height: 600px;
+
+                .card {
+                    height: 50%;
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+        }
+
+        .form {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .btn {
+                border: none;
+                background-color: $primary;
+                border-radius: 10px;
+                padding: 12px 35px;
+                color: white;
+                margin-top: 20px;
+            }
+
+            #bottone {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: #619fac;
+
+                botton {
+                    font-family: 'Lato', sans-serif;
+                }
+            }
+
+            input {
+                background-color: #a3dbef;
+                border-style: none;
+                color: black;
+                padding: 10px;
+                margin: 10px 0px 20px 0px;
+                border-radius: 5px;
+                
+                ::placeholder {
+                    color: red;
+                }
+            }
+
+            .privacy {
+                display: flex;
+                flex-direction: row;
+
+                .checkbox {
+                    margin: 10px
+                }
+            }
+        }
+
+        @media only screen and (min-width: 40em) {
+            .form {
+                flex: 1 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    .contatti {
+        top: $top;
+        bottom: 0%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .contatti {
+        margin-left: 0;
+        margin-right: 0;    
+        
+        .form {
+            margin-left: 20px;
+            margin-right: 20px;   
+        }
+    }
+}

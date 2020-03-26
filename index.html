@@ -212,80 +212,73 @@
                 </div>
             </div>
         </div>
-        <footer class="footer" id="footer">
-            <div class="footer--contatti">
-                <div class="container contatti">
-                    <div class="title contatti--title">
-                        <h1>CONTATTI</h1>
+        <div class="container contatti">
+            <div class="title contatti--title">
+                <h1>CONTATTI</h1>
+            </div>
+            <div class="padding">
+                <div class="mappa">
+                    <iframe class="card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.937096856836!2d10.997195015187067!3d45.43076934369519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f3fd94d631f%3A0xb9a1156ee2f8c5e!2s311%20Verona!5e0!3m2!1sit!2sit!4v1580136890932!5m2!1sit!2sit"></iframe>
+                </div>
+                <div class="form">
+                    <p>
+                        Il nostro progetto è stato ideato e realizzato
+                        presso 311 Verona. Nonchè la sede dove abbiamo
+                        sostenuto il corso biennale con indirizzo UX (User
+                        Experience).
+                    </p>
+                    <br>
+                    <label for="nome" class="flex1">Nome*</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome..."/>
+                    <label for="cognome" class="flex1">Cognome*</label>
+                    <input type="text" name="cognome" id="cognome" placeholder="Cognome..."/>
+                    <label for="mail" class="flex1">Mail*</label>
+                    <input type="text" name="mail" id="mail" placeholder="Mail..."/>
+                    <label for="richiesta" class="flex4">Richiesta*</label>
+                    <input type="text" name="richiesta" id="richiesta" placeholder="Richiesta..."/>
+                    <div class="privacy">
+                        <input class="flex1 checkbox" type="checkbox" name="privacy" id="privacy" />
+                        <label for="privacy">
+                            <h4 class="flex4 text">
+                                Acconsento il trattamento dei dati secondo la
+                                Privacy Policy
+                            </h4>
+                        </label>
                     </div>
-                    <div class="padding">
-                        <div class="mappa">
-                            <iframe class="card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.937096856836!2d10.997195015187067!3d45.43076934369519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f3fd94d631f%3A0xb9a1156ee2f8c5e!2s311%20Verona!5e0!3m2!1sit!2sit!4v1580136890932!5m2!1sit!2sit"></iframe>
-                        </div>
-                        <div class="form">
-                            <p>
-                                Il nostro progetto è stato ideato e realizzato
-                                presso 311 Verona. Nonchè la sede dove abbiamo
-                                sostenuto il corso biennale con indirizzo UX (User
-                                Experience).
-                            </p>
-                            <br>
-                            <label for="nome" class="flex1">Nome*</label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome..."/>
-                            <label for="cognome" class="flex1">Cognome*</label>
-                            <input type="text" name="cognome" id="cognome" placeholder="Cognome..."/>
-                            <label for="mail" class="flex1">Mail*</label>
-                            <input type="text" name="mail" id="mail" placeholder="Mail..."/>
-                            <label for="richiesta" class="flex4">Richiesta*</label>
-                            <input type="text" name="richiesta" id="richiesta" placeholder="Richiesta..."/>
-                            <div class="privacy">
-                                <input class="flex1 checkbox" type="checkbox" name="privacy" id="privacy" />
-                                <label for="privacy">
-                                    <h4 class="flex4 text">
-                                        Acconsento il trattamento dei dati secondo la
-                                        Privacy Policy
-                                    </h4>
-                                </label>
-                            </div>
-                            <div id="bottone">
-                                <button onclick="alert('Grazie per averci scritto')" class="btn">
-                                    Invia
-                                </button>
-                            </div>
-                        </div>
+                    <div id="bottone">
+                        <button onclick="alert('Grazie per averci scritto')" class="btn">
+                            Invia
+                        </button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <img class="logo flex1" src="assets/img/Logo2.png" alt="Happy Hippo">
+            <div class="flex1 link">
+                <a href="#">
+                    <h4>Privacy</h4>
+                </a>
+                <h4>Copyright © 2020 Happy Hippo</h4>
+                <h4>All right reserved</h4>
+            </div>
+            <div class="flex1 social">
+                <div class="flex_col flex1">
+                    <div class="flex1">
+                        <h3>Seguici sui nostri social!</h3>
+                    </div>
+                </div>
 
-                    <div class="bottom">
-                        <img class="logo flex1" src="assets/img/Logo2.png" alt="Happy Hippo">
-                        <div class="flex1 link">
-                            <a href="#">
-                                <h4>Privacy</h4>
-                            </a>
-                            <h4>Copyright © 2020 Happy Hippo</h4>
-                            <h4>All right reserved</h4>
-                        </div>
-                        <div class="flex1 social">
-                            <div class="flex_col flex1">
-                                <div class="flex1"></div>
-                                <div class="flex2">
-                                    <h3>Seguici sui nostri social!</h3>
-                                </div>
-                                <div class="flex1"></div>
-                            </div>
-
-                            <div class="flex3 icone">
-                                <div class="effect jaques">
-                                    <div class="buttons flex_row">
-                                        <div class="flex1"></div>
-                                        <a href="https://www.facebook.com/Happyhippo_babysix-109457890590667" class="fb" title="Join us on Facebook" target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <div class="flex1"></div>
-                                        <a href="https://www.instagram.com/happyhippo_babysix/" class="insta" title="Join us on Instagram" target="_blank">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        <div class="flex1"></div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="flex3 icone">
+                    <div class="effect jaques">
+                        <div class="buttons flex_row">
+                            <div class="flex1"></div>
+                            <a href="https://www.facebook.com/Happyhippo_babysix-109457890590667" class="fb" title="Metti mi piace alla nostra pagina Facebook" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <div class="flex1"></div>
+                            <a href="https://www.instagram.com/happyhippo_babysix/" class="insta" title="Seguici su Instagram" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <div class="flex1"></div>
                         </div>
                     </div>
                 </div>

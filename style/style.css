@@ -746,11 +746,10 @@ body .back {
   }
 }
 
-.footer {
+.contatti {
   margin-left: 15%;
   margin-right: 15%;
   z-index: 1;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,20 +757,13 @@ body .back {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.footer--contatti {
-  z-index: 1;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.footer--contatti .title {
+.contatti .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -784,12 +776,12 @@ body .back {
 }
 
 @media only screen and (min-width: 40em) {
-  .footer--contatti .title {
+  .contatti .title {
     margin-bottom: 65px;
   }
 }
 
-.footer--contatti .padding {
+.contatti .padding {
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,7 +794,7 @@ body .back {
       flex-wrap: wrap;
 }
 
-.footer--contatti .padding .mappa {
+.contatti .padding .mappa {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -821,18 +813,18 @@ body .back {
           justify-content: center;
 }
 
-.footer--contatti .padding .mappa .card {
+.contatti .padding .mappa .card {
   border-radius: 5px;
   height: 80%;
 }
 
 @media only screen and (min-width: 40em) {
-  .footer--contatti .padding iframe {
+  .contatti .padding iframe {
     min-height: 00px;
     position: absolute;
     background-position: top;
   }
-  .footer--contatti .padding .mappa {
+  .contatti .padding .mappa {
     margin-top: 8px;
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
@@ -840,14 +832,14 @@ body .back {
     min-width: 300px;
     min-height: 600px;
   }
-  .footer--contatti .padding .mappa .card {
+  .contatti .padding .mappa .card {
     height: 50%;
     padding: 0px;
     margin: 0px;
   }
 }
 
-.footer--contatti .padding .form {
+.contatti .padding .form {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -859,7 +851,7 @@ body .back {
           flex-direction: column;
 }
 
-.footer--contatti .padding .form .btn {
+.contatti .padding .form .btn {
   border: none;
   background-color: #f29100;
   border-radius: 10px;
@@ -868,7 +860,7 @@ body .back {
   margin-top: 20px;
 }
 
-.footer--contatti .padding .form #bottone {
+.contatti .padding .form #bottone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,11 +877,11 @@ body .back {
   color: #619fac;
 }
 
-.footer--contatti .padding .form #bottone botton {
+.contatti .padding .form #bottone botton {
   font-family: 'Lato', sans-serif;
 }
 
-.footer--contatti .padding .form input {
+.contatti .padding .form input {
   background-color: #a3dbef;
   border-style: none;
   color: black;
@@ -898,23 +890,23 @@ body .back {
   border-radius: 5px;
 }
 
-.footer--contatti .padding .form input ::-webkit-input-placeholder {
+.contatti .padding .form input ::-webkit-input-placeholder {
   color: red;
 }
 
-.footer--contatti .padding .form input :-ms-input-placeholder {
+.contatti .padding .form input :-ms-input-placeholder {
   color: red;
 }
 
-.footer--contatti .padding .form input ::-ms-input-placeholder {
+.contatti .padding .form input ::-ms-input-placeholder {
   color: red;
 }
 
-.footer--contatti .padding .form input ::placeholder {
+.contatti .padding .form input ::placeholder {
   color: red;
 }
 
-.footer--contatti .padding .form .privacy {
+.contatti .padding .form .privacy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -924,19 +916,53 @@ body .back {
           flex-direction: row;
 }
 
-.footer--contatti .padding .form .privacy .checkbox {
+.contatti .padding .form .privacy .checkbox {
   margin: 10px;
 }
 
 @media only screen and (min-width: 40em) {
-  .footer--contatti .padding .form {
+  .contatti .padding .form {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
             flex: 1 50%;
   }
 }
 
-.footer--contatti .bottom {
+@media only screen and (min-width: 40em) {
+  .contatti {
+    top: 70px;
+    bottom: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .contatti {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contatti .form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  opacity: 0.8;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -950,7 +976,7 @@ body .back {
       flex-wrap: wrap;
 }
 
-.footer--contatti .bottom .logo {
+.footer .logo {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -973,7 +999,7 @@ body .back {
   z-index: 1;
 }
 
-.footer--contatti .bottom .link {
+.footer .link {
   margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,17 +1014,17 @@ body .back {
           justify-content: center;
 }
 
-.footer--contatti .bottom .link a h4 {
+.footer .link a h4 {
   margin-top: 10px;
   text-decoration: none;
   color: black;
 }
 
-.footer--contatti .bottom .link a:hover {
+.footer .link a:hover {
   text-decoration: underline;
 }
 
-.footer--contatti .bottom .social {
+.footer .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1011,18 +1037,18 @@ body .back {
   margin: 20px;
 }
 
-.footer--contatti .bottom .social .container {
+.footer .social .container {
   margin: 60px auto 0px auto;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-.footer--contatti .bottom .social .container span {
+.footer .social .container span {
   display: inline-block;
 }
 
-.footer--contatti .bottom .social .container span:before, .footer--contatti .bottom .social .container span:after {
+.footer .social .container span:before, .footer .social .container span:after {
   content: "";
   display: block;
   width: 34px;
@@ -1030,22 +1056,22 @@ body .back {
   margin: 0px 0px 0px 2px;
 }
 
-.footer--contatti .bottom .social .effect {
+.footer .social .effect {
   width: 100%;
 }
 
-.footer--contatti .bottom .social .effect h2 {
+.footer .social .effect h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 25px;
   letter-spacing: 3px;
 }
 
-.footer--contatti .bottom .social .effect:nth-child(2) {
+.footer .social .effect:nth-child(2) {
   margin-top: 50px;
 }
 
-.footer--contatti .bottom .social .effect .buttons {
+.footer .social .effect .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1054,11 +1080,11 @@ body .back {
           justify-content: center;
 }
 
-.footer--contatti .bottom .social .effect a:last-child {
+.footer .social .effect a:last-child {
   margin-right: 0px;
 }
 
-.footer--contatti .bottom .social .effect a {
+.footer .social .effect a {
   text-decoration: none !important;
   background-color: #A3DBEF;
   width: 60px;
@@ -1079,34 +1105,34 @@ body .back {
   position: relative;
 }
 
-.footer--contatti .bottom .social .effect a i {
+.footer .social .effect a i {
   position: relative;
   z-index: 3;
 }
 
-.footer--contatti .bottom .social .effect a.fb {
+.footer .social .effect a.fb {
   background-color: #3b5998;
   color: white;
 }
 
-.footer--contatti .bottom .social .effect a.insta {
+.footer .social .effect a.insta {
   background-color: #bc2a8d;
   color: white;
 }
 
-.footer--contatti .bottom .social .effect.jaques a {
+.footer .social .effect.jaques a {
   width: 70px;
   height: 70px;
   -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
   transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
 }
 
-.footer--contatti .bottom .social .effect.jaques a:hover {
+.footer .social .effect.jaques a:hover {
   border-radius: 50%;
 }
 
 @media only screen and (min-width: 40em) {
-  .footer--contatti .bottom {
+  .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1115,7 +1141,7 @@ body .back {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .footer--contatti .bottom .logo {
+  .bottom .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1135,7 +1161,7 @@ body .back {
     background-size: contain;
     z-index: 1;
   }
-  .footer--contatti .bottom .link {
+  .bottom .link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1149,7 +1175,7 @@ body .back {
         -ms-flex: 1;
             flex: 1;
   }
-  .footer--contatti .bottom .social {
+  .bottom .social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1162,36 +1188,6 @@ body .back {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-  }
-}
-
-@media only screen and (min-width: 40em) {
-  .footer {
-    top: 70px;
-    bottom: 0%;
-    background-color: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-  }
-}
-
-@media only screen and (max-width: 40em) {
-  .footer {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .footer .form {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

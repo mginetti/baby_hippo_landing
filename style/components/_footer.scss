@@ -1,302 +1,147 @@
 .footer {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-top: 20px;
+    opacity: 0.8;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
 
-    // top: $top;
-    z-index: 1;
-    height: 100vh;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
-    &--contatti {
-        z-index: 1;
-        flex-basis: 100%;
+    .logo {
+        height: 100px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
 
-        .title {
-            justify-content: center;
-            flex: 1 100%;
-            display: flex;
+    .link {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        a h4 {
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
         }
 
-        @media only screen and (min-width: 40em) {
-            .title {
-                margin-bottom: 65px;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .social {
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+        flex-direction: column;
+        margin: 20px;
+
+        .container {
+            margin: 60px auto 0px auto;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+            span {
+                display: inline-block;
+
+                &:before,
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 34px;
+                    height: 2px;
+                    margin: 0px 0px 0px 2px;
+                }
             }
         }
 
-        .padding {
-            z-index: 1;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+        .effect {
+            width: 100%;
 
-            .mappa {
-                flex-basis: 100%;
+            h2 {
+
+                font: {
+                    family: 'Playfair Display', serif;
+                    weight: 400;
+                    size: 25px;
+                }
+
+                letter-spacing: 3px;
+            }
+
+            &:nth-child(2) {
+                margin-top: 50px;
+            }
+
+            .buttons {
                 display: flex;
-                flex-direction: row;
-                height: 300px;
+                justify-content: center;
+            }
+
+            a {
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .effect {
+
+            a {
+                text-decoration: none !important;
+                background-color: #A3DBEF;
+                width: 60px;
+                height: 60px;
+                display: flex;
                 align-items: center;
                 justify-content: center;
-
-                .card {
-                    border-radius: 5px;
-                    height: 80%;
-                }
-            }
-
-            @media only screen and (min-width: 40em) {
-                iframe {
-                    min-height: 00px;
-                    position: absolute;
-                    background-position: top;
-                }
-
-                .mappa {
-                    margin-top: 8px;
-                    flex: 1 50%;
-                    min-width: 300px;
-                    min-height: 600px;
-
-                    .card {
-                        height: 50%;
-                        padding: 0px;
-                        margin: 0px;
-                    }
-                }
-            }
-
-            .form {
-                flex-basis: 100%;
-                display: flex;
-                flex-direction: column;
-
-                .btn {
-                    border: none;
-                    background-color: $primary;
-                    border-radius: 10px;
-                    padding: 12px 35px;
-                    color: white;
-                    margin-top: 20px;
-                }
-
-                #bottone {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    color: #619fac;
-
-                    botton {
-                        font-family: 'Lato', sans-serif;
-                    }
-                }
-
-                input {
-                    background-color: #a3dbef;
-                    border-style: none;
-                    color: black;
-                    padding: 10px;
-                    margin: 10px 0px 20px 0px;
-                    border-radius: 5px;
-                    
-                    ::placeholder {
-                        color: red;
-                    }
-                }
-
-                .privacy {
-                    display: flex;
-                    flex-direction: row;
-
-                    .checkbox {
-                        margin: 10px
-                    }
-                }
-            }
-
-            @media only screen and (min-width: 40em) {
-                .form {
-                    flex: 1 50%;
-                }
-            }
-        }
-
-        .bottom {
-            flex-basis: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-            .logo {
-                height: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
-                margin-left: auto;
-                margin-right: auto;
-                background-size: contain;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .link {
-                margin: 20px;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                justify-content: center;
-
-                a h4 {
-                    margin-top: 10px;
-                    text-decoration: none;
-                    color: black;
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
-
-            .social {
-                justify-content: center;
-                text-align: center;
                 border-radius: 5px;
-                flex-direction: column;
                 margin: 20px;
+                font-size: 25px;
+                overflow: hidden;
+                position: relative;
 
-                .container {
-                    margin: 60px auto 0px auto;
-                    text-align: center;
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-
-                    span {
-                        display: inline-block;
-
-                        &:before,
-                        &:after {
-                            content: "";
-                            display: block;
-                            width: 34px;
-                            height: 2px;
-                            margin: 0px 0px 0px 2px;
-                        }
-                    }
+                i {
+                    position: relative;
+                    z-index: 3;
                 }
 
-                .effect {
-                    width: 100%;
-
-                    h2 {
-
-                        font: {
-                            family: 'Playfair Display', serif;
-                            weight: 400;
-                            size: 25px;
-                        }
-
-                        letter-spacing: 3px;
-                    }
-
-                    &:nth-child(2) {
-                        margin-top: 50px;
-                    }
-
-                    .buttons {
-                        display: flex;
-                        justify-content: center;
-                    }
-
-                    a {
-
-                        &:last-child {
-                            margin-right: 0px;
-                        }
-                    }
+                &.fb {
+                    background-color: #3b5998;
+                    color: white;
                 }
 
-                .effect {
-
-                    a {
-                        text-decoration: none !important;
-                        background-color: #A3DBEF;
-                        width: 60px;
-                        height: 60px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 5px;
-                        margin: 20px;
-                        font-size: 25px;
-                        overflow: hidden;
-                        position: relative;
-
-                        i {
-                            position: relative;
-                            z-index: 3;
-                        }
-
-                        &.fb {
-                            background-color: #3b5998;
-                            color: white;
-                        }
-
-                        &.insta {
-                            background-color: #bc2a8d;
-                            color: white;
-                        }
-                    }
-                }
-
-                .effect.jaques {
-
-                    a {
-                        width: 70px;
-                        height: 70px;
-                        transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
-
-                        &:hover {
-                            border-radius: 50%;
-                        }
-                    }
+                &.insta {
+                    background-color: #bc2a8d;
+                    color: white;
                 }
             }
         }
 
-        @media only screen and (min-width: 40em) {
-            .bottom {
-                display: flex;
-                flex-direction: row;
+        .effect.jaques {
 
-                .logo {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 10px;
-                    margin-left: 10%;
-                    margin-right: 5%;
-                    background-size: contain;
-                    z-index: 1;
+            a {
+                width: 70px;
+                height: 70px;
+                transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
 
-                }
-
-                .link {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex: 1;
-                }
-
-                .social {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex: 1;
+                &:hover {
+                    border-radius: 50%;
                 }
             }
         }
@@ -304,25 +149,35 @@
 }
 
 @media only screen and (min-width: 40em) {
-    .footer {
-        top: $top;
-        bottom: 0%;
-        background-color: transparent;
+    .bottom {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        position: relative;
-    }
-}
 
-@media only screen and (max-width: 40em) {
-    .footer {
-        margin-left: 0;
-        margin-right: 0;    
-        
-        .form {
-            margin-left: 20px;
-            margin-right: 20px;   
+        .logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10%;
+            margin-right: 5%;
+            background-size: contain;
+            z-index: 1;
+
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
         }
     }
 }
