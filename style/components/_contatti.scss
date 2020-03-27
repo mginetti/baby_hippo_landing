@@ -34,7 +34,7 @@
             justify-content: center;
 
             .card {
-                border-radius: 5px;
+                border-radius: $radius5;
                 height: 80%;
             }
         }
@@ -47,15 +47,16 @@
             }
 
             .mappa {
-                margin-top: 8px;
+                // margin-top: 8px;
                 flex: 1 50%;
                 min-width: 300px;
-                min-height: 600px;
+                min-height: 400px;
 
                 .card {
-                    height: 50%;
+                    height: 70%;
                     padding: 0px;
                     margin: 0px;
+                    border-radius: $radius5;
                 }
             }
         }
@@ -68,7 +69,7 @@
             .btn {
                 border: none;
                 background-color: $primary;
-                border-radius: 10px;
+                border-radius: $radius5;
                 padding: 12px 35px;
                 color: white;
                 margin-top: 20px;
@@ -92,7 +93,7 @@
                 color: black;
                 padding: 10px;
                 margin: 10px 0px 20px 0px;
-                border-radius: 5px;
+                border-radius: $radius5;
                 
                 ::placeholder {
                     color: red;
@@ -131,7 +132,8 @@
 @media only screen and (max-width: 40em) {
     .contatti {
         margin-left: 0;
-        margin-right: 0;    
+        margin-right: 0;
+        margin-bottom: 10px;
         
         .form {
             margin-left: 20px;

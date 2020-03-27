@@ -45,7 +45,7 @@
     .social {
         justify-content: center;
         text-align: center;
-        border-radius: 5px;
+        border-radius: $radius5;
         flex-direction: column;
         margin: 20px;
 
@@ -149,20 +149,25 @@
 }
 
 @media only screen and (min-width: 40em) {
-    .bottom {
+    .footer {
+        margin-top: 100px;
+        flex-basis: 100%;
         display: flex;
         flex-direction: row;
 
         .logo {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            margin-left: 10%;
-            margin-right: 5%;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            // margin-top: 10px;
+            // margin-left: 10%;
+            // margin-right: 5%;
             background-size: contain;
             z-index: 1;
+            margin-left: 30%;
+            margin-right: 5%;
+            margin-top: 45px;
 
         }
 
@@ -171,6 +176,7 @@
             align-items: center;
             justify-content: center;
             flex: 1;
+            margin: 20px 20px 0px 20px;
         }
 
         .social {
@@ -178,6 +184,8 @@
             align-items: center;
             justify-content: center;
             flex: 1;
+            margin-bottom: 0px;
+            margin-right: 20%;
         }
     }
 }
