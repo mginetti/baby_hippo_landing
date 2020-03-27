@@ -11,15 +11,15 @@
 	align-items: center;
 
 	&--logo {
+		margin-left: 20%;
 		img {
-			height: 75px;
+			height: 70px;
 		}
 	}
 
 	&--menu {
-		// background-color: blue;
+		margin-right: 20%;
 		border-radius: 15px;
-		margin-left: 15px;
 		flex-basis: 100%;
 		flex: 1;
 
