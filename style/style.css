@@ -194,6 +194,24 @@ body .back {
   position: relative;
 }
 
+.about #continuaP {
+  color: red;
+  cursor: pointer;
+}
+
+.about #continuaS {
+  color: red;
+  cursor: pointer;
+}
+
+.about .tt {
+  background-color: transparent;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .about #title {
   font-size: 50px;
   margin-top: 40px;
@@ -298,14 +316,6 @@ body .back {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.tt {
-  background-color: transparent;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 35em) {
@@ -604,7 +614,7 @@ body .back {
   cursor: pointer;
 }
 
-.navbar label .hamburger {
+.navbar label #hamburger {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -618,8 +628,8 @@ body .back {
   transition: 0.5s ease-in-out;
 }
 
-.navbar label .hamburger:after,
-.navbar label .hamburger:before {
+.navbar label #hamburger:after,
+.navbar label #hamburger:before {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   content: "";
@@ -630,11 +640,11 @@ body .back {
   background: #000;
 }
 
-.navbar label .hamburger:before {
+.navbar label #hamburger:before {
   top: -10px;
 }
 
-.navbar label .hamburger:after {
+.navbar label #hamburger:after {
   bottom: -10px;
 }
 
@@ -652,18 +662,18 @@ body .back {
   background-color: lightblue;
 }
 
-.navbar label input:checked + .menu .hamburger {
+.navbar label input:checked + .menu #hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.navbar label input:checked + .menu .hamburger:after {
+.navbar label input:checked + .menu #hamburger:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
 }
 
-.navbar label input:checked + .menu .hamburger:before {
+.navbar label input:checked + .menu #hamburger:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
@@ -690,10 +700,6 @@ body .back {
   display: block;
   color: #000;
   text-decoration: none;
-}
-
-.navbar label #listaMenu {
-  display: none;
 }
 
 @media only screen and (min-width: 50em) {

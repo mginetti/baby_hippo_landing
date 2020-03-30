@@ -14,18 +14,18 @@
     <div class="back"></div>
     <div id="transparent">
         <div class="jumbotrom">
-            <div class="navbar" id="hamburger">
+            <div class="navbar">
                 <div class="topbar--logo">
                     <a href="#">
-                        <img src="assets/img/Logo.png" />
+                        <img style="opacity: 1;" src="assets/img/Logo.png" alt="Happy hippo" />
                     </a>
                 </div>
                 <label>
                     <input type="checkbox" />
                     <span class="menu">
-                        <span class="hamburger" onclick="myFunction()"></span>
+                        <span id="hamburger" onclick="showMenu()"></span>
                     </span>
-                    <ul id="listaMenu">
+                    <ul id="listaMenu" style="display: none;">
                         <li><a onclick="myIntro()">
                                 <h3>Intro</h3>
                             </a></li>
@@ -100,10 +100,10 @@
                             libera e gratuita e l’incremento dell’alfabetizzazione degli adulti per un
                             totale del 50%.
                         </p>
-                        <span id="bottone">
-                            Continua a leggere
+                        <span id="continuaP" onclick="showP()">
+                            <u>Continua a leggere</u>
                         </span>
-                        <p id="hidden">
+                        <p id="hiddenP" style="display: none;">
                             L’idea alla base del miglioramento della qualità
                             dell’istruzione è la premessa per la realizzazione di uno sviluppo
                             sostenibile.
@@ -143,10 +143,10 @@
                             pubbliche istituzioni ovvero dalla solidarietà di associazioni e/o
                             finanziatori privati.
                         </p>
-                        <span onclick="showHide()" id="bottone">
-                            Continua a leggere
+                        <span id="continuaS" onclick="showS()">
+                            <u>Continua a leggere</u>
                         </span>
-                        <p id="hidden">
+                        <p id="hiddenS" style="display: none;">
                             Si prevede, inoltre, la collaborazione e l’impegno, eventualmente anche
                             finanziario, da parte dei genitori/parenti dei bambini che soffrono delle
                             citate difficoltà di apprendimento che condivideranno il progetto.
