@@ -1,6 +1,7 @@
 const init = () => {
 	const mobile = isMobile();
-
+	var hamburger = document.getElementsByClassName("hamburger");
+	hamburger.addEventListener("click", showHide());
 };
 
 // Check if is mobile
@@ -41,4 +42,16 @@ function myArgomenti() {
 function myIntro() {
 	var element = document.getElementById("about");
 	element.scrollIntoView();
+}
+
+function myFunction() {
+}
+
+function showHide() {
+	var listaMenu = document.getElementById("listaMenu");
+	if (listaMenu.style.display === "none") {
+		listaMenu.style.display = "block";
+	} else {
+		listaMenu.style.display = "none";
+	}
 }
