@@ -28,7 +28,7 @@ body .back {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.4;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -212,6 +212,17 @@ body .back {
   padding-bottom: 15px;
 }
 
+.about .tt .sottot {
+  margin-bottom: 10px;
+  font-size: 22px;
+  margin-left: 28%;
+  color: #3d5984;
+}
+
+.about .tt p {
+  font-size: 20px;
+}
+
 .about #title {
   font-size: 50px;
   margin-top: 40px;
@@ -253,8 +264,8 @@ body .back {
 }
 
 .about--row {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,8 +280,7 @@ body .back {
           flex: 1 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: center;
 }
 
 .about--row .sosten img {
