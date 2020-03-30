@@ -1,7 +1,5 @@
 const init = () => {
 	const mobile = isMobile();
-	var hamburger = document.getElementsByClassName("hamburger");
-	hamburger.addEventListener("click", showHide());
 };
 
 // Check if is mobile
@@ -22,36 +20,58 @@ const isMobile = () => {
 };
 
 
-init()
+init();
+
+var listaMenu = document.getElementById("listaMenu");
 
 function myContatti() {
+	showHide(listaMenu);
 	var element = document.getElementById("contatti");
 	element.scrollIntoView();
 }
 
 function myMascotte() {
+	showHide(listaMenu);
 	var element = document.getElementById("mascotte");
 	element.scrollIntoView();
 }
 
 function myArgomenti() {
+	showHide(listaMenu);
 	var element = document.getElementById("argomenti");
 	element.scrollIntoView();
 }
 
 function myIntro() {
+	showHide(listaMenu);
 	var element = document.getElementById("about");
 	element.scrollIntoView();
 }
 
-function myFunction() {
+function showMenu() {
+	showHide(listaMenu);
 }
 
-function showHide() {
-	var listaMenu = document.getElementById("listaMenu");
-	if (listaMenu.style.display === "none") {
-		listaMenu.style.display = "block";
+function showP() {
+	var continuaP = document.getElementById("continuaP");
+	var hiddenP = document.getElementById("hiddenP");
+	showHide(hiddenP);
+	showHide(continuaP);
+}
+
+function showS() {
+	var continuaS = document.getElementById("continuaS");
+	var hiddenS = document.getElementById("hiddenS");
+	showHide(hiddenS);
+	showHide(continuaS);
+}
+
+function showHide(element) {
+	if (element.style.display == "none") {
+		console.log("Togli");
+		element.style.display = "";
 	} else {
-		listaMenu.style.display = "none";
+		console.log("Metti");
+		element.style.display = "none";
 	}
 }
