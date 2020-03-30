@@ -26,18 +26,18 @@
                         <span id="hamburger" onclick="showMenu()"></span>
                     </span>
                     <ul id="listaMenu" style="display: none;">
-                        <li><a onclick="myIntro()">
-                                <h3>Intro</h3>
-                            </a></li>
-                        <li><a onclick="myArgomenti()">
-                                <h3>Argomenti</h3>
-                            </a></li>
-                        <li><a onclick="myMascotte()">
-                                <h3>Mascotte</h3>
-                            </a></li>
-                        <li><a onclick="myContatti()">
-                                <h3>Contatti</h3>
-                            </a></li>
+                        <a onclick="myIntro()">
+                            <h1>Intro</h1>
+                        </a>
+                        <a onclick="myArgomenti()">
+                            <h1>Argomenti</h1>
+                        </a>
+                        <a onclick="myMascotte()">
+                            <h1>Mascotte</h1>
+                        </a>
+                        <a onclick="myContatti()">
+                            <h1>Contatti</h1>
+                        </a>
                     </ul>
                 </label>
             </div>
@@ -58,8 +58,8 @@
             </div>
         </div>
         <div id="about" class="container about">
-            <h1 id="title">Baby-Six per la Dislessia</h1>
-            <div class="about--title">
+            <h1>Baby-Six per la Dislessia</h1>
+            <div id="subTitle">
                 <h3>
                     Progettiamo e realizziamo giochi interattivi <br> per
                     sensibilizzare i bambini alla DSA.
@@ -67,12 +67,12 @@
             </div>
 
             <div class="about--row">
-                <div class="col row--about">
+                <div class="row--chiSiamo">
                     <div class="about--img">
                         <img src="assets/img/about/Pesci_logo.svg" alt="" />
                     </div>
                     <div class="tt">
-                        <p class="sottot"><strong> Chi Siamo </strong></p>
+                        <h3>Chi Siamo</h3>
                         <p>
                             Il gruppo di lavoro Baby6 è composto da sei studenti del corso di User
                             Experience Specialist dell’ITS LAST Academy di Verona.
@@ -83,12 +83,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="col project">
+                <div class="row--project">
                     <div class="about--img">
                         <img src="assets/img/about/Pesce_logo.svg" alt="" />
                     </div>
                     <div class="tt">
-                        <p class="sottot"><strong> Progetto </strong></p>
+                        <h3>Progetto </h3>
                         <p>
                             Ad ottobre ci sono stati presentati diciassette divari (obiettivi per lo
                             sviluppo sostenibile) che l’Organizzazione delle Nazioni Unite ha stilato
@@ -100,8 +100,8 @@
                             libera e gratuita e l’incremento dell’alfabetizzazione degli adulti per un
                             totale del 50%.
                         </p>
-                        <span id="continuaP" onclick="showP()">
-                            <u>Continua a leggere</u>
+                        <span id="continuaP" onclick="showP()" class="link">
+                            <u>Continua a leggere...</u>
                         </span>
                         <p id="hiddenP" style="display: none;">
                             L’idea alla base del miglioramento della qualità
@@ -125,14 +125,17 @@
                             sezione porrà l’attenzione sulle forme mostrando i disagi che la
                             disgrafia può causare
                         </p>
+                        <span id="nascondiP" onclick="showP()" style="display: none;" class="link">
+                            <u>Nascondi</u>
+                        </span>
                     </div>
                 </div>
-                <div class="col sosten">
+                <div class="row--sosten">
                     <div class="about--img">
                         <img src="assets/img/about/Pesciolini_logo.svg" alt="" />
                     </div>
                     <div class="tt">
-                        <p class="sottot"><strong> Sostenibilità </strong></p>
+                        <h3>Sostenibilità</h3>
                         <p>
                             L’attività risulta essere, nello spirito degli obiettivi per lo sviluppo
                             sostenibile indicati dall’ONU, indirizzata alla comunità nazionale ed
@@ -143,14 +146,17 @@
                             pubbliche istituzioni ovvero dalla solidarietà di associazioni e/o
                             finanziatori privati.
                         </p>
-                        <span id="continuaS" onclick="showS()">
-                            <u>Continua a leggere</u>
+                        <span id="continuaS" onclick="showS()" class="link">
+                            <u>Continua a leggere...</u>
                         </span>
                         <p id="hiddenS" style="display: none;">
                             Si prevede, inoltre, la collaborazione e l’impegno, eventualmente anche
                             finanziario, da parte dei genitori/parenti dei bambini che soffrono delle
                             citate difficoltà di apprendimento che condivideranno il progetto.
                         </p>
+                        <span id="nascondiS" onclick="showS()" style="display: none;" class="link">
+                            <u>Nascondi</u>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -326,7 +332,7 @@
         </div>
 
         <footer class="footer">
-            <img class="logo" src="assets/img/Logo2.png" alt="Happy Hippo">
+            <img class="logo" src="assets/img/Logo.png" alt="Happy Hippo">
             <div class="link">
                 <a href="#">
                     <h4>Privacy</h4>

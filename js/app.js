@@ -55,23 +55,25 @@ function showMenu() {
 function showP() {
 	var continuaP = document.getElementById("continuaP");
 	var hiddenP = document.getElementById("hiddenP");
+	var nascondiP = document.getElementById("nascondiP");
 	showHide(hiddenP);
 	showHide(continuaP);
+	showHide(nascondiP);
 }
 
 function showS() {
 	var continuaS = document.getElementById("continuaS");
 	var hiddenS = document.getElementById("hiddenS");
+	var nascondiS = document.getElementById("nascondiS");
 	showHide(hiddenS);
 	showHide(continuaS);
+	showHide(nascondiS);
 }
 
 function showHide(element) {
 	if (element.style.display == "none") {
-		console.log("Togli");
 		element.style.display = "";
 	} else {
-		console.log("Metti");
 		element.style.display = "none";
 	}
 }
