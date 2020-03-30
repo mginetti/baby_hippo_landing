@@ -19,13 +19,13 @@
 	&--desc {
 		flex: 1 100%;
 		margin-top: $margin;
-		padding: 15px 15% 15px 15%;
+
 
 		p {
 			font-size: 25px;
 		}
 
-		ul{
+		ul {
 			font-size: 25px;
 			display: flex;
 			flex-direction: column;
@@ -38,6 +38,10 @@
 				margin-left: 25%;
 				width: 50%;
 			}
+		}
+
+		@media only screen and (max-width: 40em) {
+			padding: 15px 15% 15px 15%;
 		}
 	}
 
@@ -96,10 +100,11 @@
 }
 
 @media only screen and (max-width: 40em) {
-    .arguments {
-        margin-left: 0;
-        margin-right: 0;    
+	.arguments {
+		margin-left: 0;
+		margin-right: 0;
 	}
+
 	.tt {
 		padding-right: 0;
 		padding-left: 0;

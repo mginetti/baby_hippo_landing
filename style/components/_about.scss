@@ -42,17 +42,21 @@
         }
     }
 
-
     &--row {
         margin-left: 15%;
         margin-right: 15%;
 
         display: flex;
-        padding: $padding;
+        // padding: $padding;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
         flex-direction: row;
         flex: 1 100%;
         flex-wrap: wrap;
+
+        text-align: justify;
+        text-justify: inter-word;
 
         .sosten {
             img {
@@ -71,7 +75,22 @@
                 flex-basis: 33%;
             }
         }
+    }
 
+    @media only screen and (min-width: 35em) {
+        .row {
+            .project {
+                flex-direction: column;
+                flex: 1 100%;
+                flex-wrap: wrap;
+
+                .tt {
+                    flex-direction: row;
+                    flex: 1 100%;
+                    flex-wrap: wrap;
+                }
+            }
+        }
     }
 
     &--img {
@@ -92,27 +111,38 @@
     }
 }
 
-@media only screen and (min-width: 35em) {
-    .about {
-        padding-left: 50px;
-        padding-right: 50px;
-        top: $top;
-        background-color: transparent;
-    }
-}
+// @media only screen and (min-width: 35em) {
+//     .about {
+//         padding-left: 50px;
+//         padding-right: 50px;
+//         top: $top;
+//         background-color: transparent;
+//     }
+// }
 
 .tt {
     background-color: transparent;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-@media only screen and (min-width: 35em) {
+// @media only screen and (min-width: 35em) {
+//     .tt {
+//         background-color: transparent;
+//         padding: 15px 20% 15px 20%;
+//         font-size: 20px;
+//     }
+//}
+
+@media only screen and (max-width: 35em) {
     .tt {
         background-color: transparent;
-        padding: 15px 20% 15px 20%;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
         font-size: 20px;
     }
 }

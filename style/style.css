@@ -240,7 +240,8 @@ body .back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 10% 15px 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -250,6 +251,8 @@ body .back {
           flex: 1 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about--row .sosten img {
@@ -267,6 +270,31 @@ body .back {
   .about--row .col {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
+  }
+}
+
+@media only screen and (min-width: 35em) {
+  .about .row .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .row .project .tt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -297,27 +325,21 @@ body .back {
           flex: 1;
 }
 
-@media only screen and (min-width: 35em) {
-  .about {
-    padding-left: 50px;
-    padding-right: 50px;
-    top: 70px;
-    background-color: transparent;
-  }
-}
-
 .tt {
   background-color: transparent;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 5%;
+  padding-left: 5%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
   .tt {
     background-color: transparent;
-    padding: 15px 20% 15px 20%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 20px;
   }
 }
@@ -352,7 +374,6 @@ body .back {
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
-  padding: 15px 15% 15px 15%;
 }
 
 .arguments--desc p {
@@ -378,6 +399,12 @@ body .back {
     margin-right: 25%;
     margin-left: 25%;
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .arguments--desc {
+    padding: 15px 15% 15px 15%;
   }
 }
 
