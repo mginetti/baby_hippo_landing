@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" href="style/style.css" />
     <title>Happy Hippo</title>
 </head>
@@ -22,15 +21,23 @@
                     </a>
                 </div>
                 <label>
-                    <input type="checkbox"/>
-                    <span class="menu"> 
-                        <span class="hamburger"></span> 
+                    <input type="checkbox" />
+                    <span class="menu">
+                        <span class="hamburger"></span>
                     </span>
                     <ul>
-                        <li><a onclick="myContatti()">Contatti</a></li>
-                        <li><a onclick="myMascotte()">Mascotte</a></li>
-                        <li><a onclick="myArgomenti()">Argomenti</a></li>
-                        <li><a onclick="myIntro()">Intro</a></li>
+                        <li><a onclick="myIntro()">
+                                <h3>Intro</h3>
+                            </a></li>
+                        <li><a onclick="myArgomenti()">
+                                <h3>Argomenti</h3>
+                            </a></li>
+                        <li><a onclick="myMascotte()">
+                                <h3>Mascotte</h3>
+                            </a></li>
+                        <li><a onclick="myContatti()">
+                                <h3>Contatti</h3>
+                            </a></li>
                     </ul>
                 </label>
             </div>
@@ -65,7 +72,9 @@
                         <img src="assets/img/about/Pesci_logo.svg" alt="" />
                     </div>
                     <div class="tt">
+                        <p><strong> Chi Siamo </strong></p>
                         <p>
+
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat. Ut wisi
@@ -78,6 +87,7 @@
                         <img src="assets/img/about/Pesce_logo.svg" alt="" />
                     </div>
                     <div class="tt">
+                        <p><strong> Progetto </strong></p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
@@ -91,6 +101,7 @@
                         <img src="assets/img/about/Pesciolini_logo.svg" alt="" />
                     </div>
                     <div class="tt">
+                        <p><strong> Sostenibilità </strong></p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
@@ -107,10 +118,16 @@
             </div>
             <div class="arguments--desc">
                 <p style="text-align: center;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur perferendis quo dolor id esse alias modi ducimus
-                    deserunt maxime sit cupiditate tempora ad, eos perspiciatis
-                    nobis tenetur aut ratione quia.
+                    Il progetto Happy Hippo si incentra su tre dei principali disturbi dell’apprendimento:
+                </p>
+                <ul style="text-align: center;">
+                    <li type="circle"><strong>Dislessia </strong>, elaborando un gioco sulle parole;</li>
+                    <li type="circle"><strong>Discalculia</strong>, con un gioco sui numeri;</li>
+                    <li type="circle"><strong>Disortografia</strong>, con un gioco sulle forme.</li>
+                </ul>
+                <p style="text-align: center;">
+                    I vari giochi saranno suddivisi in più livelli, con punteggi, allo scopo di far interagire
+                    maggiormente i bambini.
                 </p>
             </div>
             <div class="arguments--arguments">
@@ -120,8 +137,10 @@
                     </div>
                     <div class="argument--desc">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sequi sit, voluptate odio aut fuga rem
+                            <strong>Dislessia</strong>, disturbo specifico della <strong> lettura </strong> che si
+                            caratterizza per la difficoltà
+                            nell’effettuare una lettura accurata e fluente in termini di velocità e correttezza. Tale
+                            difficoltà può avere ripercussioni sulla comprensione del testo scritto.
                         </p>
                     </div>
                 </div>
@@ -131,8 +150,11 @@
                     </div>
                     <div class="argument--desc">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sequi sit, voluptate odio aut fuga rem
+                            <strong>Discalculia</strong>, disturbo specifico delle abilità di calcolo, con difficoltà
+                            importanti
+                            nell’automatizzazione dei processi di calcolo sia mentale che scritto, nell’acquisizione e
+                            recupero dei fatti numerici in generale, nel comprendere e operare con i <strong> numeri
+                            </strong>.
                         </p>
                     </div>
                 </div>
@@ -142,8 +164,10 @@
                     </div>
                     <div class="argument--desc">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sequi sit, voluptate odio aut fuga rem
+                            <strong>Disortografia</strong>, disturbo specifico della scrittura che si manifesta con
+                            difficoltà
+                            nell’apprendere ed automatizzare le regole di conversione
+                            fonema-grafema e la corretta <strong> forma </strong> ortografica delle parole.
                         </p>
                     </div>
                 </div>
@@ -155,10 +179,12 @@
             </div>
             <div class="mascottes--desc">
                 <p style="text-align: center;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur perferendis quo dolor id esse <br> alias modi ducimus
-                    deserunt maxime sit cupiditate tempora ad, eos perspiciatis
-                    nobis tenetur aut ratione quia.
+                    Le mascotte all’interno dell’applicazione indicano i personaggi animale che rappresentano i vari
+                    argomento. L’ippopotamo Hippo è la mascotte principale; in seguito si incontreranno Bubbo Gufo, che
+                    affiancherà e motiverà i bambini nell’argomento dei numeri, Penny il panda nelle lettere e Gracy la
+                    rana per le forme.
+                    In questa pagina si potranno scaricare le schede di ogni personaggio contenenti gadget per i
+                    bambini.
                 </p>
             </div>
             <div class="mascottes--mascottes">
@@ -213,13 +239,14 @@
             </div>
         </div>
 
-        <div class="container contatti">
+        <div id="contatti" class="container contatti">
             <div class="title contatti--title">
                 <h1>CONTATTI</h1>
             </div>
             <div class="padding">
                 <div class="mappa">
-                    <iframe class="card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.937096856836!2d10.997195015187067!3d45.43076934369519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f3fd94d631f%3A0xb9a1156ee2f8c5e!2s311%20Verona!5e0!3m2!1sit!2sit!4v1580136890932!5m2!1sit!2sit"></iframe>
+                    <iframe class="card"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.9370968568924!2d10.997195015873956!3d45.43076934369406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f3fd94d631f%3A0xb9a1156ee2f8c5e!2s311%20Verona!5e0!3m2!1sit!2sit!4v1585403675750!5m2!1sit!2sit"></iframe>
                 </div>
                 <div class="form">
                     <p>
@@ -230,13 +257,13 @@
                     </p>
                     <br>
                     <label for="nome" class="flex1">Nome*</label>
-                    <input type="text" name="nome" id="nome" placeholder="Nome..."/>
+                    <input type="text" name="nome" id="nome" placeholder="Nome..." />
                     <label for="cognome" class="flex1">Cognome*</label>
-                    <input type="text" name="cognome" id="cognome" placeholder="Cognome..."/>
+                    <input type="text" name="cognome" id="cognome" placeholder="Cognome..." />
                     <label for="mail" class="flex1">Mail*</label>
-                    <input type="text" name="mail" id="mail" placeholder="Mail..."/>
+                    <input type="text" name="mail" id="mail" placeholder="Mail..." />
                     <label for="richiesta" class="flex4">Richiesta*</label>
-                    <input type="text" name="richiesta" id="richiesta" placeholder="Richiesta..."/>
+                    <input type="text" name="richiesta" id="richiesta" placeholder="Richiesta..." />
                     <div class="privacy">
                         <input class="flex1 checkbox" type="checkbox" name="privacy" id="privacy" />
                         <label for="privacy" style="margin-top: 20px;">
@@ -274,11 +301,8 @@
                 <div class="flex1 icone">
                     <div class="effect jaques">
                         <div class="buttons flex_row">
-                            <!-- <div class="flex1"></div>
-                            <a href="https://www.facebook.com/Happyhippo_babysix-109457890590667" class="fb" title="Metti mi piace alla nostra pagina Facebook" target="_blank">
-                                <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <div class="flex1"></div> -->
-                            <a href="https://www.instagram.com/happyhippo_babysix/" class="insta" title="Seguici su Instagram" target="_blank">
+                            <a href="https://www.instagram.com/happyhippo_babysix/" class="insta"
+                                title="Seguici su Instagram" target="_blank">
                                 <i class="fa fa-instagram" aria-hidden="true"></i></a>
                             <div class="flex1"></div>
                         </div>
@@ -287,8 +311,7 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <script src="js/app.js"></script>
 
 </body>

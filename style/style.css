@@ -160,7 +160,7 @@ body .back {
 
 .waves {
   height: 10vh;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 10% 15px 10%;
   padding-top: 0;
   position: relative;
   z-index: -1;
@@ -240,7 +240,7 @@ body .back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 10% 15px 10%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -317,10 +317,7 @@ body .back {
 @media only screen and (min-width: 35em) {
   .tt {
     background-color: transparent;
-    padding-right: 110px;
-    padding-left: 110px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 20% 15px 20%;
     font-size: 20px;
   }
 }
@@ -355,11 +352,25 @@ body .back {
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 15% 15px 15%;
 }
 
 .arguments--desc p {
   font-size: 25px;
+}
+
+.arguments--desc ul {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 40em) {
@@ -371,7 +382,7 @@ body .back {
 }
 
 .arguments--arguments {
-  padding: 15px 20px 15px 20px;
+  padding: 15px 10% 15px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +419,8 @@ body .back {
 
 .arguments--arguments .argument--desc {
   margin-top: 15px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 10% 15px 10%;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 40em) {
@@ -465,7 +477,7 @@ body .back {
 
 .mascottes--desc {
   z-index: 1;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 10% 15px 10%;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
@@ -477,7 +489,7 @@ body .back {
 }
 
 .mascottes--mascottes {
-  padding: 15px 20px 15px 20px;
+  padding: 15px 10% 15px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +525,7 @@ body .back {
 
 .mascottes--mascottes .mascotte--desc {
   margin-top: 15px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 10% 15px 10%;
   text-align: center;
 }
 
@@ -824,7 +836,6 @@ body .back {
 
 @media only screen and (min-width: 40em) {
   .contatti .padding iframe {
-    min-height: 00px;
     position: absolute;
     background-position: top;
   }
@@ -833,12 +844,14 @@ body .back {
         -ms-flex: 1 50%;
             flex: 1 50%;
     min-width: 300px;
-    min-height: 400px;
+    height: 20%;
+    padding-top: 200px;
+    padding-bottom: 0px;
   }
   .contatti .padding .mappa .card {
-    height: 70%;
+    height: 62%;
     padding: 0px;
-    margin: 0px;
+    margin: 45px 0x 0px 0px;
     border-radius: 5px;
   }
 }
@@ -854,6 +867,7 @@ body .back {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 6vw;
+  padding-left: 20px;
 }
 
 .contatti .padding .form .btn {

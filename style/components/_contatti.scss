@@ -41,7 +41,6 @@
 
         @media only screen and (min-width: 40em) {
             iframe {
-                min-height: 00px;
                 position: absolute;
                 background-position: top;
             }
@@ -50,12 +49,14 @@
                 // margin-top: 8px;
                 flex: 1 50%;
                 min-width: 300px;
-                min-height: 400px;
+                height: 20%;
+                padding-top: 200px;
+                padding-bottom: 0px;
 
                 .card {
-                    height: 70%;
+                    height: 62%;
                     padding: 0px;
-                    margin: 0px;
+                    margin: 45px 0x 0px 0px;
                     border-radius: $radius5;
                 }
             }
@@ -66,6 +67,7 @@
             display: flex;
             flex-direction: column;
             padding-right: 6vw;
+            padding-left: 20px;
 
             .btn {
                 border: none;
@@ -95,7 +97,7 @@
                 padding: 10px;
                 margin: 10px 0px 20px 0px;
                 border-radius: $radius5;
-                
+
                 ::placeholder {
                     color: red;
                 }
@@ -135,10 +137,10 @@
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 10px;
-        
+
         .form {
             margin-left: 20px;
-            margin-right: 20px;   
+            margin-right: 20px;
         }
     }
 }
