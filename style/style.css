@@ -374,6 +374,8 @@ body .back {
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .arguments--desc p {
@@ -717,6 +719,10 @@ body .back {
   text-decoration: none;
 }
 
+.navbar label #listaMenu {
+  display: none;
+}
+
 @media only screen and (min-width: 50em) {
   .navbar {
     display: none;
@@ -786,6 +792,9 @@ body .back {
 @media only screen and (max-width: 50em) {
   .topbar {
     display: none;
+  }
+  .topbar--logo {
+    margin-left: 0;
   }
 }
 
