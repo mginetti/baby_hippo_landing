@@ -14,12 +14,6 @@
         cursor: pointer;
     }
 
-    img {
-        margin-right: 10%;
-        display: flex;
-        height: 100%;
-        width: 100%;
-    }
 
     p {
         display: flex;
@@ -31,6 +25,15 @@
         display: flex;
         .testo {
             flex-wrap: wrap;
+            flex-basis: 75%;
+        }
+
+        img {
+            margin-right: 10%;
+            display: flex;
+            flex-basis: 25%;
+            height: 100%;
+            width: 100%;
         }
     }
 
@@ -40,11 +43,7 @@
         color: $third;
         text-align: center;
     }
-
-    .tt {
-        padding: 5%;
-    }
-
+    
     h1 {
         font-size: 50px;
         margin-top: 80px;
@@ -88,14 +87,6 @@
 }
 
 @media only screen and (max-width: 35em) {
-    .tt {
-        background-color: transparent;
-        padding-right: 5%;
-        padding-left: 5%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 20px;
-    }
 
     #title {
         max-height: 100px;
