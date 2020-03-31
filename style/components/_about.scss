@@ -19,15 +19,13 @@
         display: flex;
         flex-wrap: wrap;
         font-size: 20px;
-        margin-right: 30%;
-        margin-left: 10%;
     }
 
     .testoImg{
         display: flex;
         .testo {
             flex-wrap: wrap;
-            flex-basis: 75%;
+            flex-basis: 50%;
         }
 
         .img {
@@ -88,7 +86,6 @@
 
 
 }
-
 @media only screen and (max-width: 35em) {
 
     #title {
@@ -101,5 +98,30 @@
 
     h3 {
         max-height: 100px;
+    }
+
+    .about--row {
+        margin-top: 100px;
+    }
+
+    .testoImg {
+        flex-wrap: wrap;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    .testo {
+        flex-basis: 0;
     }
 }
