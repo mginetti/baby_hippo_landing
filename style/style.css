@@ -196,24 +196,50 @@ body .back {
   position: relative;
 }
 
-.about .tt {
-  background-color: transparent;
-  padding: 5%;
-}
-
-.about .tt .link {
+.about .link {
+  display: inline;
   color: #f29100;
   cursor: pointer;
 }
 
-.about .tt h3 {
+.about img {
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.about p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+}
+
+.about .testoImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .testoImg .testo {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about h3 {
   padding: 2%;
   font-size: 26px;
   color: #3d5984;
+  text-align: center;
 }
 
-.about .tt p {
-  font-size: 20px;
+.about .tt {
+  padding: 5%;
 }
 
 .about h1 {
@@ -243,18 +269,6 @@ body .back {
   text-align: center;
 }
 
-@media only screen and (min-width: 35em) {
-  .about #subTitle h3 {
-    max-height: 100px;
-  }
-}
-
-@media only screen and (min-width: 35em) {
-  .about #title {
-    max-height: 100px;
-  }
-}
-
 .about--row {
   margin-left: 20%;
   margin-right: 20%;
@@ -272,53 +286,8 @@ body .back {
           flex: 1 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center;
-}
-
-.about--row .sosten img {
-  height: 80px;
-  padding: 5px;
-}
-
-.about--row .col {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  position: relative;
-}
-
-@media only screen and (min-width: 35em) {
-  .about--row .col {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
-  }
-}
-
-.about--img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100px;
-}
-
-.about--img img {
-  height: 100%;
-  width: 150px;
-}
-
-.about--text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @media only screen and (max-width: 35em) {
@@ -329,6 +298,16 @@ body .back {
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
+  }
+  #title {
+    max-height: 100px;
+  }
+  .col {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  h3 {
+    max-height: 100px;
   }
 }
 
@@ -550,6 +529,7 @@ body .back {
   border-radius: 5px;
   padding: 12px 35px;
   color: white;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 40em) {
