@@ -42,6 +42,10 @@ body {
 		justify-content: center;
 		align-items: center;
 
+		h1 {
+			color: $third;
+		}
+
 		h1::before {
 			content: "";
 			position: absolute;

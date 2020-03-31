@@ -54,6 +54,10 @@ body .back {
           align-items: center;
 }
 
+.container .title h1 {
+  color: #3d5984;
+}
+
 .container .title h1::before {
   content: "";
   position: absolute;
@@ -308,6 +312,7 @@ body .back {
 
 .about--img img {
   height: 100%;
+  width: 150px;
 }
 
 .about--text {
@@ -744,7 +749,7 @@ body .back {
 
 .topbar--menu ul li a {
   font-size: 25px;
-  color: black;
+  color: #3d5984;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
