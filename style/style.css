@@ -45,6 +45,8 @@ body .back {
 }
 
 .container .title {
+  margin-top: 5%;
+  margin-bottom: 5%;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -209,6 +211,8 @@ body .back {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 20px;
+  margin-right: 30%;
+  margin-left: 10%;
 }
 
 .about .testoImg {
@@ -224,14 +228,15 @@ body .back {
       flex-basis: 75%;
 }
 
-.about .testoImg img {
-  margin-right: 10%;
+.about .testoImg .img {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  height: 100%;
+}
+
+.about .testoImg .img img {
   width: 100%;
 }
 
@@ -308,7 +313,6 @@ body .back {
   margin-right: 15%;
   top: 70px;
   background-color: transparent;
-  margin-top: 30px;
   position: relative;
 }
 

@@ -19,6 +19,8 @@
         display: flex;
         flex-wrap: wrap;
         font-size: 20px;
+        margin-right: 30%;
+        margin-left: 10%;
     }
 
     .testoImg{
@@ -28,12 +30,12 @@
             flex-basis: 75%;
         }
 
-        img {
-            margin-right: 10%;
-            display: flex;
+        .img {
             flex-basis: 25%;
-            height: 100%;
-            width: 100%;
+            display: flex;
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -43,7 +45,7 @@
         color: $third;
         text-align: center;
     }
-    
+
     h1 {
         font-size: 50px;
         margin-top: 80px;
