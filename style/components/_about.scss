@@ -23,9 +23,9 @@
 
     .testoImg{
         display: flex;
+
         .testo {
             flex-wrap: wrap;
-            flex-basis: 50%;
         }
 
         .img {
@@ -83,9 +83,8 @@
         text-align: justify;
         text-justify: inter-word;
     }
-
-
 }
+
 @media only screen and (max-width: 35em) {
 
     #title {
@@ -122,6 +121,12 @@
     }
 
     .testo {
-        flex-basis: 0;
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (min-width: 35em) {
+    .testo {
+        flex-basis: 50%;
     }
 }

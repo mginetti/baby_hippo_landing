@@ -71,6 +71,7 @@ function showS() {
 }
 
 function showHide(element) {
+	console.log("nascondo:" + element);
 	if (element.style.display == "none") {
 		element.style.display = "";
 	} else {
