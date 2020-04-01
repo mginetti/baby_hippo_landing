@@ -222,8 +222,8 @@ body .back {
 .about .testoImg .testo {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .about .testoImg .img {
@@ -357,14 +357,10 @@ body .back {
       -ms-flex: 1 100%;
           flex: 1 100%;
   margin-top: 15px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .arguments--desc p {
   font-size: 25px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .arguments--desc ul {
@@ -386,8 +382,6 @@ body .back {
     margin-right: 25%;
     margin-left: 25%;
     width: 50%;
-    text-align: justify;
-    text-justify: inter-word;
   }
 }
 
